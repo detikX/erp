@@ -1,5 +1,5 @@
 // set initial states
-gsap.set('#scrollDist', { width: '100%', height: '500%' })
+gsap.set('#scrollDist', { width: '100%', height: '500vh' })
 gsap.set('#container', { position: 'fixed', width: 7900, height: 5600, transformOrigin: '0 0' })
 gsap.to('#container', { duration: 1, opacity: 1, ease: 'power2.inOut', delay: 0.3 })
 
