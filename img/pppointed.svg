@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 640 800">
+
+<defs>
+    <style>
+        #jalan {
+            stroke-dasharray: 800;
+            stroke-dashoffset: 0;
+            -webkit-animation: dash 4s linear forwards;
+            -o-animation: dash 4s linear forwards;
+            -moz-animation: dash 4s linear forwards;
+            animation: dash 4s linear forwards;
+        }
+
+        @-webkit-keyframes dash {
+            from {
+                stroke-dashoffset: 800;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+
+</defs>
+
+<g stroke-width="20" stroke="hsl(227, 71%, 57%)" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="rotate(228, 320, 400)"><path id="jalan" d="M163.5 243.5Q363.5 343.5 320 400Q207.5 526.5 476.5 556.5 " marker-end="url(#SvgjsMarker1221)"></path></g><defs><marker markerWidth="5" markerHeight="5" refX="2.5" refY="2.5" viewBox="0 0 5 5" orient="auto" id="SvgjsMarker1221"><polygon points="0,5 2.5,2.5 0,0 5,2.5" fill="hsl(227, 71%, 57%)"></polygon></marker></defs>
+
+</svg>
