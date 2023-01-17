@@ -6,7 +6,7 @@
 <defs>
     <style>
         #jalan {
-            stroke-dasharray: 800;
+            stroke-dasharray: 1070;
             stroke-dashoffset: 0;
             -webkit-animation: dash 4s linear forwards;
             -o-animation: dash 4s linear forwards;
@@ -16,7 +16,7 @@
 
         @-webkit-keyframes dash {
             from {
-                stroke-dashoffset: 800;
+                stroke-dashoffset: 1070;
             }
             to {
                 stroke-dashoffset: 0;
