@@ -12,6 +12,11 @@ div {
     font-family: 'Rubik', sans-serif;
 }
 
+.totop {
+    position: relative;
+    z-index: 44;
+}
+
 .color {
     &-white {
         color: white;
