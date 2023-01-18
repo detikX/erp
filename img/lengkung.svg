@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 595.276 841.89" style="enable-background:new 0 0 595.276 841.89;" xml:space="preserve">
+	<defs>
+		<style>
+			 #jalan {
+				stroke-dasharray: 1070;
+				stroke-dashoffset: 0;
+				-webkit-animation: dash 10s linear infinite;
+				-o-animation: dash 10s linear infinite;
+				-moz-animation: dash 10s linear infinite;
+				animation: dash 10s linear infinite;
+			}
+
+			@-webkit-keyframes dash {
+				0, 100% {
+					stroke-dashoffset: 0;
+				}
+				50% {
+					stroke-dashoffset: 1070;
+				}
+			}
+		</style>
+	</defs>
+
+<path id="jalan" style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;" d="M185.247,124.685
+	C46.764,413.566,287.733,570.822,511.274,554.822"/>
+
+</svg>
