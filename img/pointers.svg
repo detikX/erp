@@ -8,18 +8,18 @@
         #jalan {
             stroke-dasharray: 1070;
             stroke-dashoffset: 0;
-            -webkit-animation: dash 4s linear forwards;
-            -o-animation: dash 4s linear forwards;
-            -moz-animation: dash 4s linear forwards;
-            animation: dash 4s linear forwards;
+            -webkit-animation: dash 10s linear infinite;
+            -o-animation: dash 10s linear infinite;
+            -moz-animation: dash 10s linear infinite;
+            animation: dash 10s linear infinite;
         }
 
         @-webkit-keyframes dash {
-            from {
-                stroke-dashoffset: 1070;
-            }
-            to {
+            0, 100% {
                 stroke-dashoffset: 0;
+            }
+            50% {
+                stroke-dashoffset: 1070;
             }
         }
     </style>
