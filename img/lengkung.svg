@@ -6,10 +6,10 @@
 			 #jalan {
 				stroke-dasharray: 1070;
 				stroke-dashoffset: 0;
-				-webkit-animation: dash 10s linear infinite;
-				-o-animation: dash 10s linear infinite;
-				-moz-animation: dash 10s linear infinite;
-				animation: dash 10s linear infinite;
+				-webkit-animation: dash 20s linear infinite;
+				-o-animation: dash 20s linear infinite;
+				-moz-animation: dash 20s linear infinite;
+				animation: dash 20s linear infinite;
 			}
 
 			@-webkit-keyframes dash {
