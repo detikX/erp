@@ -22,3 +22,12 @@ $(".click").click(function(){
 //   // Reverse the drawing (when scrolling upwards)
 //   triangle.style.strokeDashoffset = length - draw;
 // }
+
+//kayak faq
+$('.kategori-item').click(function(event) {
+    var id = $(this).attr('id');
+    var toShow = '#show-' + id;
+
+    $('.dashboard-content').not(toShow).hide();
+    $(toShow).fadeIn();
+});
