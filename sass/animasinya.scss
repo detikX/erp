@@ -203,7 +203,7 @@
     touch-action: manipulation;
     text-transform: uppercase;
 
-    &:focus {
+    &:focus,&:hover {
         box-shadow: none !important;
         background: white !important;
         border-color: #229b7b !important;
