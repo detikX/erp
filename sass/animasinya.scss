@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 @import 'peta';
 
 .hiden {
@@ -164,8 +164,6 @@
         right: 0;
         .buttonx {
             display: block;
-            
-            border: 1px solid;
             padding: 0;
             margin: 0;
             li {
@@ -182,6 +180,20 @@
 .btn-primary {
     font-size: 14px !important;
     font-family: 'Roboto' !important;
+    background: linear-gradient(to top, #0dccea, #0d70ea) !important;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Montserrat',sans-serif !important;
+    font-size: .9em;
+    margin: 5px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
     @media screen and (max-width:766px) {
         font-size: 12px !important;
         font-family: "Roboto" !important;
