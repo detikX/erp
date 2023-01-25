@@ -202,6 +202,13 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     text-transform: uppercase;
+
+    &:focus {
+        box-shadow: none !important;
+        background: white !important;
+        border-color: #229b7b !important;
+        color: #229b7b !important;
+    }
     
     @media screen and (max-width:766px) {
         font-size: 10px !important;
