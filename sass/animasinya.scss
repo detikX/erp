@@ -162,6 +162,7 @@
         // right: 30vw;
         z-index: 66;
         width: 320px;
+        padding: 8px;
         right: 0;
         @media screen and (max-width:766px) {
             width: auto;
@@ -170,7 +171,8 @@
         .buttonx {
             display: block;
             padding: 0;
-            margin: 0;
+            margin: 0 auto;
+            text-align: center;
             li {
                 display: inline;
                 button {
@@ -204,6 +206,7 @@
     @media screen and (max-width:766px) {
         font-size: 10px !important;
         padding: 2px !important;
+        width: 120px !important;
     }
 }
 
@@ -225,7 +228,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        height: 20px;
+        height: 60px;
         background: linear-gradient(to top, #51615a, transparent);
 
     }
