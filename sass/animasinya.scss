@@ -378,6 +378,10 @@ main {
             bottom: 0;
         }
 
+        @media screen and (min-width:1500px) {
+            top: 125px;
+        }
+
         .buttonx {
             display: block;
             padding: 0;
