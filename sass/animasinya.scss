@@ -132,7 +132,7 @@
         content: '';
         background-image: url('../img/jakarta-city.png');
         background-position: bottom;
-        background-size: 100% 50%;
+        background-size: 100% 45%;
         // filter: blur(2px);
         background-repeat: no-repeat;
         right: 0;
@@ -306,13 +306,15 @@
     height: 100%;
 
     &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 60px;
-        background: linear-gradient(to top, #51615a, transparent);
+        @media screen and (max-width:766px) {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: linear-gradient(to top, #51615a, transparent);
+        }
     }
 
     @media screen and (max-width:766px) {
