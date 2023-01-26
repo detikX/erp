@@ -56,12 +56,16 @@ main {
         position: absolute;
         font-family: 'Poppins';
         z-index: 4;
-        top: 70%;
+        top: 30%;
         font-weight: bold;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
         display: block;
+
+        @media screen and (max-width:766px) {
+            width: 80%;
+        }
 
         .bigs {
             font-size: 2.7rem;
@@ -69,11 +73,25 @@ main {
             background: #003d81;
             color: white;
             padding: 8px;
+
+            @media screen and (max-width:766px) {
+                font-size: 1.85rem;
+                font-weight: bold;
+                background: #003d81;
+                color: #fff;
+                padding: 8px;
+            }
         }
 
         .smalls {
             font-size: 2.3rem;
             letter-spacing: 8px;
+
+            @media screen and (max-width:766px) {
+                font-size: 1.3rem;
+                letter-spacing: 8px;
+                margin-top: 8px;
+            }
         }
     }
 }
