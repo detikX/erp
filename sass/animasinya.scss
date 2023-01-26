@@ -37,8 +37,10 @@ main {
 
     .text-judul {
         position: absolute;
+        font-family: 'Poppins';
         z-index: 4;
         top: 50%;
+        font-weight: bold;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
