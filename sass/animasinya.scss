@@ -671,3 +671,49 @@ main {
 .nonee {
     list-style-type: none;
 }
+
+.data {
+    background: #51615a;
+    min-height: 100vh;
+    position: relative;
+    z-index: 14;
+    padding: 62px 0 32px;
+
+    @media screen and (max-width:766px) {
+        padding: 32px 0;
+    }
+
+    h3 {
+        color: #32debe;
+        font-size: 2.5rem;
+        font-family: 'Poppins';
+    }
+
+    p {
+        color: #ececec;
+        font-family: 'Poppins';
+    }
+
+    .w-300 {
+        width: fit-content !important;
+        text-align: left;
+    }
+
+    .tekx {
+        display: inline-block;
+        font-size: 16px !important;
+    }
+
+    .tops {
+        width: 30px;
+        height: 30px;
+        transform: rotate(90deg);
+        display: inline-block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
