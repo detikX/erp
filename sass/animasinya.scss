@@ -46,7 +46,7 @@ main {
         position: absolute;
         left: 16px;
         bottom: 16px;
-        opacity: .3;
+        opacity: .6;
         width: 200px;
         height: auto;
 
@@ -55,6 +55,7 @@ main {
             bottom: initial;
             top: 16px;
             left: initial;
+            opacity: .3;
             right: 16px;
         }
 
@@ -219,7 +220,8 @@ main {
     height: 100vh;
     position: relative;
     z-index: 13;
-    background: #50615a;
+    // background: #50615a;
+    background: #2b4138;
     width: 100%;
 
     @keyframes gerak {
@@ -673,7 +675,7 @@ main {
 }
 
 .data {
-    background: #51615a;
+    background: #2b4138;
     min-height: 100vh;
     position: relative;
     z-index: 14;
