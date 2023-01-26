@@ -31,6 +31,17 @@ main {
     background: #cfcfcf;
     z-index: 4;
 
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        height: 30vh;
+        background: linear-gradient(to bottom, transparent, #cfcfcf);
+    }
+
     .uangx {
         position: absolute;
         left: 16px;
@@ -55,10 +66,11 @@ main {
     }
 
     .img {
-        position: absolute;
+        position: fixed;
         left: 0;
         right: 0;
         top: 0;
+        z-index: -1;
         opacity: .3;
         bottom: 0;
         width: 100%;
@@ -121,7 +133,7 @@ main {
 
 .pembukaan {
     position: relative;
-    z-index: 2;
+    z-index: 12;
     background: white;
     height: 120vh;
     padding: 32px 0;
@@ -143,7 +155,7 @@ main {
 
     .gradient {
         background: linear-gradient(to bottom, #cfcfcf, rgba(252, 252, 252, .2), rgb(207 207 207 / 60%));
-        position: fixed;
+        position: absolute;
         left: 0;
         right: 0;
         top: 0;
@@ -152,7 +164,7 @@ main {
     }
 
     .imagez {
-        position: fixed;
+        position: absolute;
         left: 0;
         right: 0;
         z-index: 2;
@@ -206,7 +218,7 @@ main {
 .mapsx {
     height: 100vh;
     position: relative;
-    z-index: 3;
+    z-index: 13;
     background: #50615a;
     width: 100%;
 
