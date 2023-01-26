@@ -1,6 +1,10 @@
-$(".click").click(function(){
+$(".click").click(function () {
     $(".hiden").show();
     // $("#jalan").addClass('.lala')
+})
+
+$(document).ready(function () {
+    new WOW().init();
 })
 
 // var triangle = document.getElementById("triangle");
@@ -18,13 +22,13 @@ $(".click").click(function(){
 // var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
 //   var draw = length * scrollpercent;
-  
+
 //   // Reverse the drawing (when scrolling upwards)
 //   triangle.style.strokeDashoffset = length - draw;
 // }
 
 //kayak faq
-$('.kategori-item').click(function(event) {
+$('.kategori-item').click(function (event) {
     var id = $(this).attr('id');
     var toShow = '#show-' + id;
 
