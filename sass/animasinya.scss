@@ -109,6 +109,24 @@
     background: #50615a;
     width: 100%;
 
+    .tulisan {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 35vw;
+        padding: 16px;
+
+        h3 {
+            font-family: 'Montserrat' !important;
+            color: white;
+            font-size: 1.85rem;
+
+            @media screen and (min-width:1500px) {
+                font-size: 2.3rem;
+            }
+        }
+    }
+
     &::before {
         position: absolute;
         content: '';
@@ -122,6 +140,10 @@
         top: 0;
         left: 0;
         opacity: .3;
+
+        @media screen and (max-width:766px) {
+            background-image: none;
+        }
     }
 
     .images {
@@ -193,7 +215,7 @@
 
     .pilih {
         position: absolute;
-        top: 0;
+        top: 90px;
         // right: 30vw;
         z-index: 66;
         width: 38vw;
@@ -203,6 +225,8 @@
         @media screen and (max-width:766px) {
             width: auto;
             padding: 8px;
+            top: initial;
+            bottom: 0;
         }
 
         .buttonx {
@@ -220,6 +244,14 @@
 
             }
         }
+    }
+}
+
+.isdesktop {
+    display: block !important;
+
+    @media screen and (max-width:766px) {
+        display: none !important;
     }
 }
 
