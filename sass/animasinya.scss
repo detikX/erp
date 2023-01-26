@@ -725,9 +725,48 @@ main {
     padding: 32px 0;
     background: #2b4138;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: 15;
     height: 80vh;
+    .wraping {
+        position: absolute;
+        /* top: 50%; */
+        z-index: 16;
+        /* top: 30vh; */
+        bottom: 55px;
+        left: 50%;
+        transform: translate(-50%, 26%);
+        overflow: hidden;
+        text-align: center;
+        @media screen and (max-width:766px) {
+            overflow: initial;
+            position: absolute;
+            top: 180px;
+            z-index: 16;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);    
+        }
+        .hijau {
+            background: #229b7b;
+            padding: 8px;
+            color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 8px;
+            display: inline-block;
+            width: 180px;
+            @media screen and (max-width:766px) {
+                width: 180px;
+            
+            }
+            .nama {
+                font-weight: bold;
+            }
+        }
+    }
     &::before {
         position: absolute;
         content: "";
