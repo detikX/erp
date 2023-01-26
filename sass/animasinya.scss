@@ -361,6 +361,18 @@ main {
         width: 35vw;
         padding: 16px;
 
+        @media screen and (max-width:766px) {
+            left: 50%;
+            top: 65%;
+            z-index: 9;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            right: initial;
+        }
+
         h3 {
             font-family: 'Poppins' !important;
             color: white;
@@ -501,6 +513,14 @@ main {
 
     @media screen and (max-width:766px) {
         display: none !important;
+    }
+}
+
+.ismobile {
+    display: none !important;
+
+    @media screen and (max-width:766px) {
+        display: block !important;
     }
 }
 
