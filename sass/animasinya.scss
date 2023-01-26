@@ -54,6 +54,8 @@ main {
     font-family: 'Poppins';
 
     p {
+        color: #393939;
+
         @media screen and (max-width:766px) {
             font-size: .85rem;
         }
