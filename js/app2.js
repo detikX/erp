@@ -35,3 +35,10 @@ $('.kategori-item').click(function (event) {
     $('.dashboard-content').not(toShow).hide();
     $(toShow).fadeIn();
 });
+
+$(".to-peta").click(function () {
+    $('html,body').animate({
+        scrollTop: $(".mapsx").offset().top
+    },
+        200);
+})
