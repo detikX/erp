@@ -42,7 +42,7 @@
     // color: white;
 
     .gradient {
-        background: linear-gradient(to bottom, #cfcfcf, rgba(252, 252, 252, 0.5), #cfcfcf);
+        background: linear-gradient(to bottom, #cfcfcf, rgba(252, 252, 252, .2), rgb(207 207 207 / 60%));
         position: fixed;
         left: 0;
         right: 0;
@@ -109,6 +109,73 @@
     z-index: 3;
     background: #50615a;
     width: 100%;
+
+    @keyframes gerak {
+
+        0%,
+        100% {
+            left: 24px;
+        }
+
+        50% {
+            left: 72px;
+        }
+    }
+
+    @keyframes gerak2 {
+
+        0%,
+        100% {
+            left: 20vw;
+        }
+
+        50% {
+            left: 23vw;
+        }
+    }
+
+    .awan {
+        position: absolute;
+        left: 24px;
+        top: 30vh;
+        width: 135px;
+        height: auto;
+        filter: grayscale(1);
+        opacity: .15;
+        animation: gerak 8s linear infinite;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @media screen and (max-width:766px) {
+            display: none;
+        }
+    }
+
+    .awan2 {
+        position: absolute;
+        left: 20vw;
+        top: 20vh;
+        width: 135px;
+        height: auto;
+        transform: rotateY(155deg);
+        filter: grayscale(1);
+        opacity: .15;
+        animation: gerak2 5s linear infinite;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @media screen and (max-width:766px) {
+            display: none;
+        }
+    }
 
     .tulisan {
         position: absolute;
