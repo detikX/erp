@@ -635,7 +635,7 @@ main {
         border-radius: 2em;
         display: grid;
         grid-template-columns: 0 4fr 1fr;
-        margin: 0 auto;
+        margin: 0 auto 16px;
         overflow: hidden;
         @media screen and (max-width: 766px) {
             width: auto;
