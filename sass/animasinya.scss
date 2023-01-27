@@ -305,7 +305,7 @@ main {
         animation-name: run;
         animation-duration: 25s;
         @media screen and (max-width: 766px) {
-            display: none;
+            // display: none;
         }
         img {
             width: 100%;
@@ -375,7 +375,7 @@ main {
         left: 0;
         opacity: .3;
         @media screen and (max-width: 766px) {
-            background-image: none;
+            // background-image: none;
         }
     }
     .images {
