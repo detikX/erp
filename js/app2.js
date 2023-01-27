@@ -1,9 +1,9 @@
-$(".click").click(function () {
+$(".click").click(function() {
     $(".hiden").show();
     // $("#jalan").addClass('.lala')
 })
 
-$(document).ready(function () {
+$(document).ready(function() {
     new WOW().init();
 })
 
@@ -28,7 +28,7 @@ $(document).ready(function () {
 // }
 
 //kayak faq
-$('.kategori-item').click(function (event) {
+$('.kategori-item').click(function(event) {
     var id = $(this).attr('id');
     var toShow = '#show-' + id;
 
@@ -36,9 +36,9 @@ $('.kategori-item').click(function (event) {
     $(toShow).fadeIn();
 });
 
-$(".to-peta").click(function () {
+$(".to-peta").click(function() {
     $('html,body').animate({
-        scrollTop: $(".mapsx").offset().top
-    },
-        200);
+            scrollTop: $(".mapsx").offset().top
+        },
+        600);
 })
