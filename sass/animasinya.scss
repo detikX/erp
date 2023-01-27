@@ -612,7 +612,7 @@ main {
             left: 0;
             right: 0;
             height: 60px;
-            background: linear-gradient(to top, #51615a, transparent);
+            background: linear-gradient(to bottom, #51615a, #2b4138);
         }
     }
 
@@ -669,7 +669,8 @@ main {
 }
 
 .data {
-    background: #2b4138;
+    // background: #2b4138;
+    background: linear-gradient(to bottom, #14261e, #2b4138);
     min-height: 100vh;
     position: relative;
     z-index: 14;
@@ -867,10 +868,10 @@ main {
     }
 
     ul li.xs-max {
-        --c: #2b4138;
+        --c: #3fbaa3;
         --high-price: 1449;
         --low-price: 1099;
-        --c2: #20312a;
+        --c2: #229b7b;
         z-index: 5;
     }
 
