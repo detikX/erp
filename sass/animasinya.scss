@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins&display=swap');
 @import 'peta';
-
 .firstletter {
     &::first-letter {
         float: left;
@@ -23,14 +22,12 @@ main {
     overflow-x: hidden;
 }
 
-
 .banner {
     height: 100vh;
     width: 100%;
     position: relative;
     background: #cfcfcf;
     z-index: 4;
-
     &::before {
         content: "";
         position: absolute;
@@ -41,7 +38,6 @@ main {
         height: 30vh;
         background: linear-gradient(to bottom, transparent, #cfcfcf);
     }
-
     .uangx {
         position: absolute;
         left: 16px;
@@ -49,8 +45,7 @@ main {
         opacity: .6;
         width: 200px;
         height: auto;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             width: 125px;
             bottom: initial;
             top: 16px;
@@ -58,14 +53,12 @@ main {
             opacity: .3;
             right: 16px;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
-
     .img {
         position: fixed;
         left: 0;
@@ -76,18 +69,15 @@ main {
         bottom: 0;
         width: 100%;
         height: 100%;
-
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-
     @media screen and (max-width:766px) {
         // height: 75vh;
     }
-
     .text-judul {
         position: absolute;
         font-family: 'Poppins';
@@ -98,19 +88,16 @@ main {
         transform: translate(-50%, -50%);
         text-align: center;
         display: block;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             width: 80%;
         }
-
         .bigs {
             font-size: 2.7rem;
             font-weight: bold;
             background: #003d81;
             color: white;
             padding: 8px;
-
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 font-size: 1.85rem;
                 font-weight: bold;
                 background: #003d81;
@@ -118,12 +105,10 @@ main {
                 padding: 8px;
             }
         }
-
         .smalls {
             font-size: 2.3rem;
             letter-spacing: 8px;
-
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 font-size: 1.3rem;
                 letter-spacing: 8px;
                 margin-top: 8px;
@@ -139,23 +124,19 @@ main {
     height: 120vh;
     padding: 32px 0;
     font-family: 'Poppins';
-
     p {
         color: #393939;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             font-size: .85rem;
         }
     }
-
     @media screen and (max-width:766px) {
         height: 100vh;
     }
-
     // color: white;
-
     .gradient {
-        background: linear-gradient(to bottom, #cfcfcf, rgba(252, 252, 252, .2), rgb(207 207 207 / 60%));
+        //background: linear-gradient(to bottom, #cfcfcf, rgba(252, 252, 252, .2), rgb(207 207 207 / 60%));
+        background: linear-gradient(to bottom, #cfcfcf, rgba(252, 252, 252, .2), rgba(#cfcfcf, .6));
         position: absolute;
         left: 0;
         right: 0;
@@ -163,7 +144,6 @@ main {
         bottom: 0;
         z-index: 2;
     }
-
     .imagez {
         position: absolute;
         left: 0;
@@ -173,30 +153,25 @@ main {
         bottom: 0;
         width: 100%;
         height: 100%;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             // position: absolute;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-
     // @media screen and (max-width:766px) {
     //     width: 50%;
     //     position: absolute;
     //     right: 0;
     // }
-
     // height: 100vh;
 }
 
 .draw {
     min-height: 300vh;
-
     // display: none;
     .images {
         position: fixed;
@@ -207,7 +182,6 @@ main {
         top: 0;
         width: 100%;
         height: 100%;
-
         img {
             width: 100%;
             height: 100%;
@@ -223,31 +197,24 @@ main {
     // background: #50615a;
     background: #2b4138;
     width: 100%;
-
     @keyframes gerak {
-
         0%,
         100% {
             left: 24px;
         }
-
         50% {
             left: 72px;
         }
     }
-
     @keyframes gerak2 {
-
         0%,
         100% {
             left: 20vw;
         }
-
         50% {
             left: 23vw;
         }
     }
-
     .awan {
         position: absolute;
         left: 24px;
@@ -257,18 +224,15 @@ main {
         filter: grayscale(1);
         opacity: .15;
         animation: gerak 8s linear infinite;
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
-
         @media screen and (max-width:766px) {
             display: none;
         }
     }
-
     .awan2 {
         position: absolute;
         left: 20vw;
@@ -279,126 +243,105 @@ main {
         filter: grayscale(1);
         opacity: .15;
         animation: gerak2 5s linear infinite;
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
-
         @media screen and (max-width:766px) {
             display: none;
         }
     }
-
     .helping {
         overflow-x: hidden;
     }
-
     @keyframes run {
         0% {
             transform: rotateY(180deg);
             left: -270px;
         }
-
         50% {
             transform: rotateY(180deg);
             left: 100%;
         }
-
         51% {
             transform: rotateY(0deg);
             left: calc(100% + 270px);
         }
-
         100% {
             transform: rotateY(0deg);
             left: -270px;
         }
     }
-
     @keyframes runs {
         0% {
             transform: rotateY(180deg);
             right: -270px;
         }
-
         50% {
             transform: rotateY(180deg);
             right: 100%;
         }
-
         51% {
             transform: rotateY(0deg);
             right: calc(100% + 270px);
         }
-
         100% {
             transform: rotateY(0deg);
             right: -270px;
         }
     }
-
-
-
     .mobil {
         position: absolute;
-        bottom: 16px;
+        bottom: 0;
         left: 0;
         width: 135px;
         height: auto;
         filter: grayscale(1);
-        opacity: .5;
+        opacity: 1;
+        z-index: 33;
         display: inline-block;
         animation: linear infinite;
         animation-name: run;
         animation-duration: 25s;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             display: none;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
-
         }
     }
-
     .mobil2 {
         position: absolute;
-        bottom: 16px;
+        bottom: 0;
         right: 0;
         width: 135px;
         height: auto;
         filter: grayscale(1);
-        opacity: .5;
+        opacity: 1;
+        z-index: 33;
         display: inline-block;
         animation: linear infinite;
         animation-name: runs;
         animation-duration: 27s;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             display: none;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
-
         }
     }
-
     .tulisan {
         position: absolute;
         right: 0;
         top: 0;
         width: 35vw;
         padding: 16px;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             left: 50%;
             top: 65%;
             z-index: 9;
@@ -409,18 +352,15 @@ main {
             font-size: 18px;
             right: initial;
         }
-
         h3 {
             font-family: 'Poppins' !important;
             color: white;
             font-size: 1.85rem;
-
-            @media screen and (min-width:1500px) {
+            @media screen and (min-width: 1500px) {
                 font-size: 2.3rem;
             }
         }
     }
-
     &::before {
         position: absolute;
         content: '';
@@ -430,16 +370,14 @@ main {
         // filter: blur(2px);
         background-repeat: no-repeat;
         right: 0;
-        bottom: 50px;
+        bottom: 0;
         top: 0;
         left: 0;
         opacity: .3;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             background-image: none;
         }
     }
-
     .images {
         width: 50%;
         // border: 1px solid red;
@@ -450,17 +388,14 @@ main {
         top: 50%;
         z-index: 9;
         transform: translate(-50%, -50%);
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             width: 100%;
         }
-
         embed {
             width: 100%;
             height: 100%;
         }
     }
-
     embed {
         width: 100%;
         height: 100%;
@@ -472,7 +407,6 @@ main {
         bottom: 0;
         right: 0;
     }
-
     .test-img {
         position: absolute;
         z-index: 3;
@@ -481,32 +415,26 @@ main {
         bottom: 0;
         right: 0;
         animation: opa 2s linear infinite;
-
         @keyframes opa {
-
             0%,
             50% {
                 opacity: 1;
             }
-
             100% {
                 opacity: .3;
             }
         }
-
         img {
             width: 100%;
             height: 100%;
             margin: 0;
             object-fit: contain;
-
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 object-fit: cover;
                 height: 80%;
             }
         }
     }
-
     .pilih {
         position: absolute;
         top: 90px;
@@ -515,31 +443,25 @@ main {
         width: 38vw;
         padding: 8px;
         right: 0;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             width: auto;
             padding: 8px;
             top: initial;
             bottom: 0;
         }
-
         @media screen and (min-width:1500px) {
             top: 125px;
         }
-
         .buttonx {
             display: block;
             padding: 0;
             margin: 0 auto;
             text-align: center;
-
             li {
                 display: inline;
-
                 button {
                     margin-bottom: 4px;
                 }
-
             }
         }
     }
@@ -547,16 +469,14 @@ main {
 
 .isdesktop {
     display: block !important;
-
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         display: none !important;
     }
 }
 
 .ismobile {
     display: none !important;
-
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         display: block !important;
     }
 }
@@ -579,7 +499,6 @@ main {
     touch-action: manipulation;
     text-transform: uppercase;
     width: 138px !important;
-
     &:focus,
     &:hover {
         box-shadow: none !important;
@@ -587,7 +506,6 @@ main {
         border-color: #229b7b !important;
         color: #229b7b !important;
     }
-
     @media screen and (max-width:766px) {
         font-size: 10px !important;
         padding: 2px !important;
@@ -608,9 +526,8 @@ main {
     // width: 100%;
     width: 28vw;
     height: 100%;
-
     &::before {
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             content: "";
             position: absolute;
             bottom: 0;
@@ -620,12 +537,10 @@ main {
             background: linear-gradient(to top, #51615a, transparent);
         }
     }
-
     @media screen and (max-width:766px) {
         width: 100%;
         height: 80%;
     }
-
     img {
         width: 100%;
         height: 100%;
@@ -645,7 +560,6 @@ main {
     padding: 32px 0;
 }
 
-
 #mySVG {
     position: fixed;
     top: 15%;
@@ -660,7 +574,6 @@ main {
     z-index: 30;
     height: 100vh;
     background: rgba($color: #ff0000, $alpha: .3);
-
     li {
         margin-bottom: 16px;
     }
@@ -680,42 +593,174 @@ main {
     position: relative;
     z-index: 14;
     padding: 62px 0 32px;
-
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         padding: 32px 0;
     }
-
     h3 {
         color: #32debe;
         font-size: 2.5rem;
         font-family: 'Poppins';
     }
-
     p {
         color: #ececec;
         font-family: 'Poppins';
     }
-
     .w-300 {
         width: fit-content !important;
         text-align: left;
+        margin: 24px auto 0;
+        display: block;
     }
-
     .tekx {
         display: inline-block;
         font-size: 16px !important;
     }
-
     .tops {
         width: 30px;
         height: 30px;
         transform: rotate(90deg);
         display: inline-block;
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
+        }
+    }
+    //iphone
+    .wall {
+        width: 60em;
+        height: 40em;
+        font-size: 10px;
+        border: 1em solid rgba(255, 255, 255, 0.5);
+        border-radius: 2em;
+        display: grid;
+        grid-template-columns: 0 4fr 1fr;
+        margin: 0 auto;
+        overflow: hidden;
+        @media screen and (max-width: 766px) {
+            width: auto;
+            height: 60vh;
+        }
+    }
+    h2 {
+        position: relative;
+        width: 20em;
+        margin: 1em;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+    .back,
+    .side {
+        display: flex;
+        align-items: center;
+    }
+    .back {
+        background: linear-gradient(to right, #555, #ddd);
+        justify-content: flex-end;
+    }
+    .side {
+        background: radial-gradient( at 0% 50%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0) 90%), linear-gradient(to right, #ddd, #ccc);
+        perspective: 1000px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        --max-price: 1449;
+        display: flex;
+        flex-direction: column;
+    }
+    .back ul {
+        width: 75%;
+        align-items: flex-end;
+    }
+    .side ul {
+        width: 100%;
+        transform-origin: left;
+        transform: rotateY(-75deg) scaleX(4);
+    }
+    ul li {
+        height: 5em;
+        background: var(--c);
+        animation: show 1s linear forwards;
+        transform-origin: right;
+        transform: scaleX(0);
+    }
+    @keyframes show {
+        to {
+            transform: scaleX(1);
+        }
+    }
+    ul li.xs-max {
+        --c: tomato;
+        --high-price: 1449;
+        --low-price: 1099;
+        --c2: orangered;
+        z-index: 5;
+    }
+    ul li.xs {
+        --c: coral;
+        --high-price: 1349;
+        --low-price: 999;
+        --c2: tomato;
+        z-index: 4;
+    }
+    ul li.xr {
+        --c: lightsalmon;
+        --high-price: 899;
+        --low-price: 749;
+        --c2: coral;
+        z-index: 3;
+    }
+    ul li.x {
+        --c: deepskyblue;
+        --high-price: 1149;
+        --low-price: 999;
+        --c2: dodgerblue;
+        z-index: 2;
+    }
+    .back ul li {
+        width: calc(var(--high-price) / var(--max-price) * 100%);
+        --percent: calc(var(--low-price) / var(--high-price) * 100%);
+        background: linear-gradient( to left, var(--c) var(--percent), var(--c2) var(--percent));
+        position: relative;
+        filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.3));
+        animation-delay: 1s;
+    }
+    .back ul li::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        transform: translateX(-3em);
+        border-right: 3em solid var(--c2);
+        border-top: 2.5em solid transparent;
+        border-bottom: 2.5em solid transparent;
+    }
+    .back ul li span {
+        position: absolute;
+        width: 95%;
+        text-align: right;
+        font-size: 1.25em;
+        line-height: 4em;
+        color: white;
+        font-family: sans-serif;
+        @media screen and (max-width: 766px) {
+            font-size: .95em;
+        }
+    }
+    .back ul li div {
+        color: white;
+        padding: 4px;
+    }
+    .side ul li {
+        padding-right: 30%;
+        text-align: right;
+        color: white;
+        font-family: sans-serif;
+        line-height: 5em;
+        @media screen and (max-width: 766px) {
+            line-height: 1.2em;
+            padding-top: 10px;
         }
     }
 }
@@ -738,14 +783,14 @@ main {
         transform: translate(-50%, 26%);
         overflow: hidden;
         text-align: center;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             overflow: initial;
             position: absolute;
             top: 180px;
             z-index: 16;
             left: 50%;
             top: 50%;
-            transform: translate(-50%,-50%);    
+            transform: translate(-50%, -50%);
         }
         .hijau {
             background: #229b7b;
@@ -755,15 +800,19 @@ main {
             border-radius: 4px;
             margin: 0 auto;
             text-align: center;
-            margin-bottom: 8px;
+            margin: 4px;
             display: inline-block;
             width: 180px;
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 width: 180px;
-            
+            }
+            .small {
+                border-bottom: 1px solid white;
+                padding-bottom: 3px;
             }
             .nama {
                 font-weight: bold;
+                padding-top: 3px;
             }
         }
     }
@@ -776,11 +825,10 @@ main {
         z-index: 15;
         bottom: 0;
         right: 0;
-      
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
-        @media screen and (max-width:766px){
+        @media screen and (max-width: 766px) {
             background-position: top;
         }
         img {
@@ -790,7 +838,7 @@ main {
         }
     }
     &::after {
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             content: "";
             position: absolute;
             top: 150px;
