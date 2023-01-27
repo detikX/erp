@@ -671,6 +671,15 @@ main {
                 bottom: -16px;
             }
         }
+        @keyframes gerakan2 {
+            0%,
+            100% {
+                left: 35%;
+            }
+            50% {
+                left: 39%;
+            }
+        }
         .img {
             position: absolute;
             bottom: 0;
@@ -689,7 +698,10 @@ main {
             left: 35%;
             width: 20%;
             bottom: -24px;
-            animation: initial;
+            animation: gerakan2 2s linear infinite;
+            @media screen and (max-width: 766px) {
+                width: 25%;
+            }
         }
     }
     .side {
@@ -789,7 +801,11 @@ main {
         left: 0;
         transform: translate(0%, -50%);
         color: white;
+        font-size: .8rem;
         font-family: 'Poppins';
+        @media screen and (max-width: 766px) {
+            font-size: .5rem;
+        }
     }
     .side ul li {
         padding-right: 30%;
@@ -848,9 +864,11 @@ main {
             .small {
                 border-bottom: 1px solid white;
                 padding-bottom: 3px;
+                font-family: 'Poppins';
             }
             .nama {
                 font-weight: bold;
+                font-family: 'Poppins';
                 padding-top: 3px;
             }
         }
