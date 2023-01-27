@@ -660,6 +660,7 @@ main {
         width: 20em;
         margin: 1em;
         color: white;
+        z-index: 33;
         font-family: 'Poppins', sans-serif;
         @media screen and (max-width: 766px) {
             width: 65vw;
