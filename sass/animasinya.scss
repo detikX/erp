@@ -604,6 +604,10 @@ main {
     p {
         color: #ececec;
         font-family: 'Poppins';
+        @media screen and (max-width: 766px) {
+            font-size: .85rem;
+            color: #d4d4d4;
+        }
     }
     .w-300 {
         width: fit-content !important;
