@@ -648,6 +648,10 @@ main {
         margin: 1em;
         color: white;
         font-family: 'Poppins', sans-serif;
+        @media screen and (max-width: 766px) {
+            width: 65vw;
+            font-size: 1.5rem;
+        }
     }
     .back,
     .side {
