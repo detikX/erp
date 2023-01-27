@@ -659,7 +659,7 @@ main {
         align-items: center;
     }
     .back {
-        background: linear-gradient(to right, #555, #ddd);
+        background: linear-gradient(to right, #2b4138, #ddd);
         justify-content: flex-end;
     }
     .side {
@@ -695,10 +695,10 @@ main {
         }
     }
     ul li.xs-max {
-        --c: tomato;
+        --c: #229b7b;
         --high-price: 1449;
         --low-price: 1099;
-        --c2: orangered;
+        --c2: #3fbaa3;
         z-index: 5;
     }
     ul li.xs {
@@ -747,20 +747,21 @@ main {
         font-size: 1.25em;
         line-height: 4em;
         color: white;
-        font-family: sans-serif;
+        font-family: 'Poppins';
         @media screen and (max-width: 766px) {
             font-size: .95em;
         }
     }
     .back ul li div {
         color: white;
-        padding: 4px;
+        padding: 8px;
+        font-family: 'Poppins', sans-serif;
     }
     .side ul li {
         padding-right: 30%;
         text-align: right;
         color: white;
-        font-family: sans-serif;
+        font-family: 'Poppins';
         line-height: 5em;
         @media screen and (max-width: 766px) {
             line-height: 1.2em;
