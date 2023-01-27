@@ -662,6 +662,15 @@ main {
         background: linear-gradient(to right, #2b4138, #ddd);
         justify-content: flex-end;
         position: relative;
+        @keyframes gerakan {
+            0%,
+            100% {
+                bottom: 0px;
+            }
+            50% {
+                bottom: -16px;
+            }
+        }
         .img {
             position: absolute;
             bottom: 0;
@@ -669,6 +678,7 @@ main {
             width: 30%;
             height: auto;
             filter: saturate(0.5);
+            animation: gerakan 2s linear infinite;
             img {
                 width: 100%;
                 height: 100%;
@@ -677,7 +687,9 @@ main {
         }
         .img2 {
             left: 35%;
+            width: 20%;
             bottom: -24px;
+            animation: initial;
         }
     }
     .side {
