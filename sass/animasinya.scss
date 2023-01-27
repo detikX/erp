@@ -756,6 +756,9 @@ main {
         color: white;
         padding: 8px;
         font-family: 'Poppins', sans-serif;
+        @media screen and (max-width: 766px) {
+            padding: 4px;
+        }
     }
     .side ul li {
         padding-right: 30%;
