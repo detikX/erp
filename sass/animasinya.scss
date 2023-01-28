@@ -1096,6 +1096,8 @@ main {
         transform: translate(-50%, 26%);
         overflow: hidden;
         text-align: center;
+        display: block;
+        width: 100%;
 
         @media screen and (max-width: 766px) {
             overflow: initial;
@@ -1118,6 +1120,16 @@ main {
             margin: 4px;
             display: inline-block;
             width: 180px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                height: 50vh;
+                width: 3px;
+                background: silver;
+                z-index: -1;
+            }
 
             @media screen and (max-width: 766px) {
                 width: 180px;
