@@ -699,6 +699,15 @@ main {
     // width: 100%;
     width: 28vw;
     height: 100%;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 20px;
+        background: linear-gradient(to top, transparent, #2b4138);
+    }
 
     @media screen and (max-width:766px) {
         border: none;
