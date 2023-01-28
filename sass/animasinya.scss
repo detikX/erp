@@ -472,6 +472,19 @@ main {
         right: 0;
     }
 
+    .informasi {
+        position: absolute;
+        top: 0;
+        /* right: 0; */
+        color: white;
+        width: 176px;
+        background: darkcyan;
+        padding: 8px;
+        font-family: 'Poppins';
+        font-size: 14px;
+        animation: none;
+    }
+
     .test-img {
         position: absolute;
         z-index: 3;
