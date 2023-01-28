@@ -97,6 +97,9 @@ main {
             animation: linear infinite;
             animation-name: banner;
             animation-duration: 15s;
+            @media screen and (max-width:766px) {
+                width: 100px;
+            }
             img {
                 width: 100%;
                 height: 100%;
@@ -111,6 +114,9 @@ main {
             animation: linear infinite;
             animation-name: banner2;
             animation-duration: 20s;
+            @media screen and (max-width:766px) {
+                width: 200px;
+            }
             img {
                 width: 100%;
                 height: 100%;
