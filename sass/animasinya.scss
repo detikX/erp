@@ -41,6 +41,84 @@ main {
         background: linear-gradient(to bottom, transparent, #cfcfcf);
     }
 
+    @keyframes banner {
+        0% {
+            transform: rotateY(180deg);
+            right: -270px;
+        }
+
+        50% {
+            transform: rotateY(180deg);
+            right: 100%;
+        }
+
+        51% {
+            transform: rotateY(0deg);
+            right: calc(100% + 270px);
+        }
+
+        100% {
+            transform: rotateY(0deg);
+            right: -270px;
+        }
+    }
+
+    @keyframes banner2 {
+        0% {
+            transform: rotateY(180deg);
+            right: -270px;
+        }
+
+        50% {
+            transform: rotateY(180deg);
+            right: 100%;
+        }
+
+        51% {
+            transform: rotateY(0deg);
+            right: calc(100% + 270px);
+        }
+
+        100% {
+            transform: rotateY(0deg);
+            right: -270px;
+        }
+    }
+    .kendaraan {
+        position: absolute;
+        bottom: 8px;
+        left: 8px;
+        right: 0;
+        .gojek {
+            width: 140px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            animation: linear infinite;
+            animation-name: banner;
+            animation-duration: 15s;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .gocar {
+            position: absolute;
+            right: 0;
+            width: 270px;
+            bottom: 0;
+            animation: linear infinite;
+            animation-name: banner2;
+            animation-duration: 20s;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        
+    }
     .uangx {
         position: absolute;
         left: 16px;
@@ -48,13 +126,14 @@ main {
         opacity: .6;
         width: 200px;
         height: auto;
+       
 
         @media screen and (max-width: 766px) {
             width: 125px;
             bottom: initial;
             top: 16px;
             left: initial;
-            opacity: .3;
+            opacity: 1;
             right: 16px;
         }
 
