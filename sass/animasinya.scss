@@ -155,7 +155,7 @@ main {
     // color: white;
     .gradient {
         //background: linear-gradient(to bottom, #cfcfcf, rgba(252, 252, 252, .2), rgb(207 207 207 / 60%));
-        background: linear-gradient(to bottom, #cfcfcf, rgba(252, 252, 252, .2), rgba(#cfcfcf, .6));
+        background: linear-gradient(to bottom, #cfcfcf, rgba(252, 252, 252, .2), #2b4138);
         position: absolute;
         left: 0;
         right: 0;
@@ -340,7 +340,7 @@ main {
 
     .mobil {
         position: absolute;
-        bottom: 0;
+        bottom: 12px;
         left: 0;
         width: 135px;
         height: auto;
@@ -365,7 +365,7 @@ main {
 
     .mobil2 {
         position: absolute;
-        bottom: 0;
+        bottom: 12px;
         right: 0;
         width: 135px;
         height: auto;
@@ -598,6 +598,7 @@ main {
     // position: fixed;
     z-index: 3;
     top: 0;
+    border: 2px solid white;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -606,6 +607,10 @@ main {
     // width: 100%;
     width: 28vw;
     height: 100%;
+
+    @media screen and (max-width:766px) {
+        border: none;
+    }
 
     &::before {
         @media screen and (max-width: 766px) {
