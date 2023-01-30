@@ -431,6 +431,9 @@ main {
             font-size: 18px;
             right: initial;
         }
+        @media screen and (max-width:375px) {
+            top: 60%;
+        }
         h3 {
             font-family: 'Poppins' !important;
             color: white;
