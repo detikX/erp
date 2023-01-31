@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins&display=swap');
 @import 'peta';
+@import 'gsap';
 .firstletter {
     &::first-letter {
         float: left;
@@ -1129,3 +1130,5 @@ main {
         }
     }
 }
+
+//scroll trigger
