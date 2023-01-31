@@ -387,7 +387,7 @@ main {
         animation-name: run;
         animation-duration: 20s;
         @media screen and (max-width: 766px) {
-            display: none;
+            // display: none;
         }
         img {
             width: 100%;
@@ -432,7 +432,7 @@ main {
         animation: linear infinite;
         animation-name: runs;
         animation-duration: 38s;
-        display: none;
+        // display: none;
         @media screen and (max-width: 766px) {
             // display: none;
             display: block;
@@ -458,7 +458,7 @@ main {
         animation: linear infinite;
         animation-name: runs;
         animation-duration: 15s;
-        display: none;
+        // display: none;
         @media screen and (max-width: 766px) {
             // display: none;
             display: block;
@@ -669,7 +669,7 @@ main {
     // position: fixed;
     z-index: 3;
     top: 0;
-    border: 2px solid white;
+    // border: 2px solid white;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -684,11 +684,12 @@ main {
     &::before {
         content: "";
         position: absolute;
-        top: 0;
-        right: 0;
+        bottom: 0;
         left: 0;
-        height: 20px;
-        background: linear-gradient(to top, transparent, #2b4138);
+        top: initial;
+        right: 0;
+        background: linear-gradient(to top, #1e2d27, transparent);
+        height: 100px;
     }
     @media screen and (max-width:766px) {
         border: none;
