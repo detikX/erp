@@ -39,9 +39,9 @@
         font-family: 'Poppins';
     }
     p {
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-family: 'Poppins';
-        line-height: 1.75rem;
+        // line-height: 1.75rem;
         color: #d4d4d4;
         letter-spacing: 0.0225rem;
         @media screen and (max-width: 766px) {
@@ -112,8 +112,13 @@
         // width: 50%;
         // height: 75vh;
         top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         position: absolute;
         z-index: 18;
+        width: 100vw;
+        // height: auto;
         &::before {
             content: "";
             position: absolute;

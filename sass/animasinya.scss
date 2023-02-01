@@ -204,9 +204,10 @@ main {
     padding: 32px 0;
     font-family: 'Poppins';
     p {
-        color: #fff;
+        color: #222;
         @media screen and (max-width: 766px) {
             font-size: .85rem;
+            color: white;
         }
     }
     @media screen and (max-width:766px) {
@@ -225,7 +226,11 @@ main {
     }
     .totop {
         position: absolute;
-        bottom: 0;
+        top: 16px;
+        @media screen and (max-width:766px) {
+            bottom: 0;
+            top: initial;
+        }
     }
     .imagez {
         position: absolute;
@@ -1176,3 +1181,21 @@ main {
 }
 
 //scroll trigger
+
+.kena {
+    background: #2b4138;
+    padding: 32px;
+    position: relative;
+    z-index: 18;
+    h3 {
+        color: #32debe;
+        font-size: 2.5rem;
+        font-family: 'Poppins';
+        @media screen and (max-width:766px) {
+            font-size: 2rem;
+        }
+    }
+    p {
+        color: white;
+    }
+}
