@@ -37,59 +37,7 @@
                 </div>
             </h2>
         </section>
-        <section class="cerita" hidden>
 
-            <div class="container gsap-anim">
-
-
-                <div class="cardx height cardx--reverse">
-
-
-                    <div class="cardx__text">
-                        <!-- <div class="tes-judul" data-aos="fade-right">
-                            <h2>Hari Pertama</h2>
-                        </div> -->
-                        <div class="tes-skew" data-aos="fade-right">
-                            <p class="firstletter">Tidak hanya di tol, masyarakat bakal dikenakan tarif saat melewati jalan arteri di Ibu Kota Jakarta. Jika sebelumnya yang membayar hanya kendaraan roda empat, kendaraan roda dua pun nanti diminta membayar saat melintasi jalan-jalan
-                                komersial.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cardx height">
-                    <!-- <div class="petax">
-                  <img src="img/voic.jpg" alt="">
-                </div> -->
-
-                    <div class="cardx__text" data-aos="fade-right">
-                        <p>
-                            Kebijakan itu bernama <i>Electronic Road Pricing</i> alias ERP. ERP adalah pilihan kesekian kalinya Pemprov DKI Jakarta untuk mengatasi kemacetan di ibu kota. Jurus three in one, dan berikutnya ganjil-genap kendaraan, terbukti
-                            tak mampu meredakan kemacetan. Jumlah kendaraan bermotor kian tak terkendali.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="cardx height cardx--reverse">
-                    <!-- <div class="petax">
-                  <img src="img/iStock-map.png" alt="">
-                </div> -->
-
-                    <div class="cardx__text">
-
-                        <div class="tes-skew" data-aos="fade-right">
-                            <p>Wacana ERP sebetulnya sudah muncul pada tahun 2006. Namun, berkali-kali ganti gubernur, rencana itu mengendap. Kini, Pemprov DKI Jakarta di bawah Plt Gubernur DKI Heru Budi kian serius menggarap ERP itu. Jika tidak ada aral
-                                melintang, ERP bakal diterapkan tahun ini. Regulasinya sedang dibahas.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-        </section>
         <section class="pembukaan">
             <div class="imagez">
                 <img src="img/bg.jpg" alt="" title="">
@@ -355,7 +303,7 @@
             </div>
         </section>
 
-        <section class="data">
+        <section class="data" hidden>
             <div class="container">
                 <h3 class="color-white text-center wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
                     Apa itu ERP?
@@ -365,7 +313,7 @@
                         <p>Mengutip dokumen Dinas Perhubungan DKI Jakarta, ERP didefinisikan sebagai metode pengendalian lalu lintas. Tujuannya adalah untuk mengurangi permintaan penggunaan jalan sampai kepada suatu titik di mana permintaan penggunaan jalan
                             tidak lagi melebihi kapasitas jalan tersebut. ERP diterapkan di jalan raya perkotaan dengan penggunaan teknologi handal.</p>
 
-                        <div class="data-lokasi wow" data-wow-delay="0.5s">
+                        <div class="data-lokasi wow" hidden data-wow-delay="0.5s">
                             <div class="wall">
                                 <h2>Pembagian Wilayah</h2>
                                 <div class="back">
@@ -404,14 +352,34 @@
                             </div>
                         </div>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit iste alias reiciendis expedita laudantium. Dolorum labore architecto cum assumenda, dolor nisi. Perferendis soluta aliquam enim doloribus, iure asperiores. Itaque, enim. Lorem ipsum dolor,
-                            sit amet consectetur adipisicing elit. Placeat non voluptatibus iste dolores quisquam ea, a, cupiditate similique harum deleniti repudiandae, fuga nihil quasi impedit magni? Voluptate nisi eveniet voluptatibus?
+                        <h3 class="color-white text-center wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                            Teknologi ERP
+                        </h3>
+
+                        <p>Merujuk Singapura yang sudah berpengalaman selama 25 tahun menerapkan ERP, setidaknya ada dua teknologi yang berkembang dalam ERP, yaitu sistem yang berbasis pada gantry dan Global Navigation Satellite System (GNSS). Saat ini,
+                            Singapura masih menggunakan sistem gantry dan bersiap untuk mengunakan GNSS yang lebih canggih. Teknologi mana yang akan digunakan Jakarta?
                         </p>
+
+                        <div class="img-tech">
+                            <div class="img-tech__img">
+                                <img src="img/smartcity.png" alt="">
+                            </div>
+                            <div class="img-tech__data">
+                                <h4 class="font-bold">
+                                    Sistem Gantry
+                                </h4>
+                                <p>Setiap kendaraan yang melewati gantry atau gerbang akan terdeteksi oleh sistem. Pada mobil pengguna jalan, harus terpasang alat bernama In-vehicle Unit (UI) untuk ‘berkomunikasi’ dengan gantry. Jika tidak punya UI, dendanya
+                                    mencapai $70 per gantry. Sedangkan biaya pemasangannya sekitar $155,80. UI memuat kartu berisi saldo yang akan terpotong bila pengendara melewati gantry. Namun, ada pula cara pembayaran lainnya, yaitu dengan kartu debit
+                                    dan kredit. Jakarta sudah melakukan uji coba sistem ini sejak beberapa tahun lalu.
+                                </p>
+                            </div>
+
+
+                        </div>
 
                         <div class="ojol"></div>
 
-                        <button class="btn btn-primary w-300 to-peta">
+                        <button class="btn btn-primary w-300 to-peta" hidden>
                             <div class="d-block">
                                 <div class="tekx">
                                     Lihat Peta
@@ -421,6 +389,108 @@
                                 </div> -->
                             </div>
                         </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cerita">
+            <div class="container gsap-anim">
+
+
+                <h2 class="titlex-lala" data-aos="fade-in">Teknologi ERP</h2>
+                <p>Merujuk Singapura yang sudah berpengalaman selama 25 tahun menerapkan ERP, setidaknya ada dua teknologi yang berkembang dalam ERP, yaitu sistem yang berbasis pada gantry dan Global Navigation Satellite System (GNSS). Saat ini, Singapura
+                    masih menggunakan sistem gantry dan bersiap untuk mengunakan GNSS yang lebih canggih. Teknologi mana yang akan digunakan Jakarta?
+                </p>
+
+                <div class="cardx height cardx--reverse">
+                    <!-- <div class="petax">
+                        <img src="img/Map.png" alt="">
+                    </div> -->
+                    <!-- <div class="cardx__img-holder" data-aos="zoom-in-left" data-aos-delay="300">
+                        <img src="img/Map.png" alt="" class="ismobile">
+                    </div> -->
+                    <div class="cardx__text">
+                        <div class="tes-judul" data-aos="fade-right">
+                            <h2>Sistem Gantry</h2>
+                        </div>
+                        <div class="tes-skew" data-aos="fade-right">
+                            <p>Setiap kendaraan yang melewati gantry atau gerbang akan terdeteksi oleh sistem. Pada mobil pengguna jalan, harus terpasang alat bernama In-vehicle Unit (UI) untuk ‘berkomunikasi’ dengan gantry. Jika tidak punya UI, dendanya
+                                mencapai $70 per gantry. Sedangkan biaya pemasangannya sekitar $155,80. UI memuat kartu berisi saldo yang akan terpotong bila pengendara melewati gantry. Namun, ada pula cara pembayaran lainnya, yaitu dengan kartu debit
+                                dan kredit. Jakarta sudah melakukan uji coba sistem ini sejak beberapa tahun lalu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardx height">
+                    <!-- <div class="petax">
+                  <img src="img/voic.jpg" alt="">
+                </div> -->
+                    <!-- <div class="cardx__img-holder" data-aos="zoom-in" data-aos-delay="500">
+                        <img src="img/eksterior/bagasi.png" alt="">
+                    </div> -->
+                    <div class="cardx__text" data-aos="fade-right">
+                        <div class="tes-judul">
+                            <h2>GNSS</h2>
+                        </div>
+                        <p>Ini merupakan ERP generasi berikutnya yang sedang disiapkan Singapura. ERP ini menggunakan sinyal satelit untuk beroperasi. GNSS memiliki lima komponen jaringan, yaitu unit on-board (OBU) di setiap kendaraan, sistem komputer yang
+                            terpusat, penguat sinyal berupa antena di pinggir jalan, sistem pemantauan di pinggir jalan, dan sistem pemantauan di kendaraan. OBU menentukan lokasi dan pergerakan kendaraan dan kemudian menentukan pungutan sesuai lokasi,
+                            pergerakan, data pemetaan, dan jadwal tarif yang berlaku saat itu.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <h2 class="titlex-lala" data-aos="zoom-in">Siapa Kena ERP?
+                </h2>
+                <div class="cardx break">
+                    <!-- <div class="petax">
+                        <img src="img/test-charger.png" alt="">
+                    </div> -->
+                    <div class="cardx__img-holder" data-aos="zoom-in" data-aos-delay="500">
+                        <img src="img/2-charger.jpeg" alt="">
+                    </div>
+                    <div class="cardx__text" data-aos="fade-right">
+                        <!-- <div class="tes-judul">
+                            <h2>Padang</h2>
+                        </div> -->
+                        <p>Di Singapura, ERP dikenakan kepada mobil pribadi. Tarifnya juga menyesuaikan jenis kendaraan. Kendaraan yang lebih besar, tarifnya lebih mahal. ERP juga berlaku untuk kendaraan dari luar negeri yang masuk Singapura, dengan aturan
+                            yang berbeda dari kendaraan lokal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cardx break cardx--reverse">
+                    <!-- <div class="petax">
+                  <img src="img/avengers.png" alt="">
+                </div> -->
+                    <div class="cardx__img-holder" data-aos="zoom-in" data-aos-delay="500">
+                        <img src="img/interior/TV3.png" alt="">
+                    </div>
+                    <div class="cardx__text" data-aos="fade-left">
+                        <!-- <div class="tes-judul">
+                            <h2>Butuh Hiburan</h2>
+                        </div> -->
+                        <p>Di Jakarta, ERP rencananya menyasar kendaraan pribadi, baik itu roda empat atau lebih, maupun roda dua (sepeda motor). Bahkan, kendaraan listrik yang digadang-gadang sebagai kendaraan ramah lingkungan pun bakal dikenai ERP.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cardx break">
+                    <div class="cardx__img-holder" data-aos="zoom-in" data-aos-delay="500">
+                        <img src="img/interior/charger.png" alt="">
+                    </div>
+                    <div class="cardx__text" data-aos="fade-right">
+                        <div class="tes-judul">
+                            <h2>Tujuh Kendaraan Bebas ERP</h2>
+                        </div>
+                        <p>
+
+                            1. Sepeda Listrik 2. Kendaraan Bermotor Umum (Plat Kuning) 3. Kendaraan Dinas Pemerintah dan TNI/Polri 4. Kendaraan Korps Diplomatik 5. Ambulans 6. Mobil Jenazah 7. Mobil Pemadam Kebakaran
+                        </p>
                     </div>
                 </div>
             </div>

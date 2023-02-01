@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik&display=swap');
-
-
 main,
 p,
 h1,
@@ -26,6 +24,9 @@ div {
 .font {
     &-sub {
         font-size: 1.58rem;
+    }
+    &-bold {
+        font-weight: bold;
     }
 }
 
