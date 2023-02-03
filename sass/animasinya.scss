@@ -285,6 +285,18 @@ main {
     // background: #50615a;
     background: #2b4138;
     width: 100%;
+    small {
+        color: rgb(191, 191, 191);
+        @media screen and (max-width: 766px) {
+            font-size: .6rem;
+            color: white;
+        }
+    }
+    h3 {
+        @media screen and (max-width: 766px) {
+            margin-bottom: 0;
+        }
+    }
     @keyframes gerak {
         0%,
         100% {
@@ -594,7 +606,7 @@ main {
     }
     .pilih {
         position: absolute;
-        top: 90px;
+        top: 120px;
         // right: 30vw;
         z-index: 66;
         width: 38vw;
@@ -1183,7 +1195,7 @@ main {
 //scroll trigger
 .kena {
     background: #2b4138;
-    padding: 32px;
+    padding: 32px 0;
     position: relative;
     z-index: 18;
     h3 {
@@ -1198,6 +1210,53 @@ main {
     li {
         color: white;
         @media screen and (max-width: 766px) {
+            font-size: .85rem;
+        }
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .kendaraan {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        &__all {
+            display: inline-block;
+            width: 32%;
+            margin: 8px 2px;
+            vertical-align: top;
+            @media screen and (max-width: 766px) {
+                width: 45%;
+            }
+        }
+    }
+    .imagec {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        @media screen and (max-width: 766px) {
+            width: 100%;
+            height: auto;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .namec {
+        width: 100%;
+        color: white;
+        display: block;
+        font-family: 'Poppins';
+        text-align: center;
+        // border: 1px solid;
+        @media screen and (max-width: 766px) {
+            width: 100%;
             font-size: .85rem;
         }
     }
