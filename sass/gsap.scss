@@ -60,7 +60,7 @@
     }
 
     .cardx {
-        display: block;
+        display: flex;
         justify-content: space-around;
         align-items: center;
         padding: 60px;
@@ -127,17 +127,11 @@
 
     .cardx__img-holder {
         // width: 35%;
-        // width: 50%;
-        // height: 75vh;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        position: absolute;
+        width: 50%;
+        height: 75vh;
+        position: relative;
         z-index: 18;
-        width: 100vw;
 
-        // height: auto;
         &::before {
             content: "";
             position: absolute;
@@ -151,7 +145,7 @@
             // border: 2px solid #4b7644;
             z-index: 2;
 
-            @media screen and (max-width: 766px) {
+            @media screen and (max-width:766px) {
                 left: -8px;
                 bottom: -8px;
                 top: 8px;
@@ -160,8 +154,8 @@
         }
 
         @media screen and (max-width:766px) {
-            width: 95%;
-            height: 100%;
+            width: 100%;
+            height: 40vh;
             margin: 8px;
             // margin-bottom: 16px;
             // clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
@@ -176,15 +170,31 @@
             border-radius: 4px;
             object-fit: contain;
         }
+    }
+
+    .cardx__text {
+        width: 400px;
+        position: relative;
+        z-index: 18;
+
+        @media screen and (max-width:766px) {
+            text-align: center;
+        }
+
+        .tes-skew {
+            // transform: skew(-20deg, 0deg);
+            // p {
+            //   transform: skew(20deg,0);
+            // } 
+        }
 
         .tes-judul {
-            position: absolute;
-            top: 40%;
-            left: 25%;
-            transform: translate(-50%, -50%);
-            font-size: 3rem;
+            background: #cfcfcf;
+            width: fit-content;
+            padding: 4px 24px;
+            color: #000;
 
-            @media screen and (max-width: 766px) {
+            @media screen and (max-width:766px) {
                 margin: 16px auto 8px;
                 display: block;
                 text-align: center;
@@ -195,39 +205,16 @@
             // padding: 4px 24px;
             // color: #01579b;
             margin-bottom: 8px;
-
             // transform: skew(-20deg, 0);
+
             h2 {
                 // transform: skew(20deg, 0);
                 margin-bottom: 0;
-                font-size: 2.5rem;
-                color: white;
             }
-        }
-    }
-
-    .cardx__text {
-        width: 70%;
-        position: relative;
-        z-index: 18;
-
-        .tes-judul {
-            color: white;
-        }
-
-        @media screen and (max-width: 766px) {
-            text-align: left;
-        }
-
-        .tes-skew {
-            // transform: skew(-20deg, 0deg);
-            // p {
-            //   transform: skew(20deg,0);
-            // } 
         }
 
         @media screen and (max-width:766px) {
-            width: 75%;
+            width: 100%;
         }
     }
 }
