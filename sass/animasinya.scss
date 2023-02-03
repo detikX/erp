@@ -2,6 +2,7 @@
 @import 'peta';
 @import 'gsap';
 @import'init';
+
 .firstletter {
     &::first-letter {
         float: left;
@@ -30,6 +31,7 @@ main {
     position: relative;
     background: #cfcfcf;
     z-index: 4;
+
     &::before {
         content: "";
         position: absolute;
@@ -40,47 +42,57 @@ main {
         height: 30vh;
         background: linear-gradient(to bottom, transparent, #cfcfcf);
     }
+
     @keyframes banner {
         0% {
             transform: rotateY(180deg);
             right: -270px;
         }
+
         50% {
             transform: rotateY(180deg);
             right: 100%;
         }
+
         51% {
             transform: rotateY(0deg);
             right: calc(100% + 270px);
         }
+
         100% {
             transform: rotateY(0deg);
             right: -270px;
         }
     }
+
     @keyframes banner2 {
         0% {
             transform: rotateY(180deg);
             right: -270px;
         }
+
         50% {
             transform: rotateY(180deg);
             right: 100%;
         }
+
         51% {
             transform: rotateY(0deg);
             right: calc(100% + 270px);
         }
+
         100% {
             transform: rotateY(0deg);
             right: -270px;
         }
     }
+
     .kendaraan {
         position: absolute;
         bottom: 8px;
         left: 8px;
         right: 0;
+
         .gojek {
             width: 140px;
             position: absolute;
@@ -89,15 +101,18 @@ main {
             animation: linear infinite;
             animation-name: banner;
             animation-duration: 15s;
+
             @media screen and (max-width: 766px) {
                 width: 100px;
             }
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
+
         .gocar {
             position: absolute;
             right: 0;
@@ -106,9 +121,11 @@ main {
             animation: linear infinite;
             animation-name: banner2;
             animation-duration: 20s;
+
             @media screen and (max-width: 766px) {
                 width: 200px;
             }
+
             img {
                 width: 100%;
                 height: 100%;
@@ -116,6 +133,7 @@ main {
             }
         }
     }
+
     .uangx {
         position: absolute;
         left: 16px;
@@ -123,6 +141,7 @@ main {
         opacity: .6;
         width: 200px;
         height: auto;
+
         @media screen and (max-width: 766px) {
             width: 125px;
             bottom: initial;
@@ -131,12 +150,14 @@ main {
             opacity: .3;
             right: 16px;
         }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
+
     .img {
         position: fixed;
         left: 0;
@@ -147,15 +168,18 @@ main {
         bottom: 0;
         width: 100%;
         height: 100%;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
+
     @media screen and (max-width:766px) {
         // height: 75vh;
     }
+
     .text-judul {
         position: absolute;
         font-family: 'Poppins';
@@ -166,9 +190,11 @@ main {
         transform: translate(-50%, -50%);
         text-align: center;
         display: block;
+
         @media screen and (max-width: 766px) {
             width: 80%;
         }
+
         .bigs {
             font-size: 2.7rem;
             font-weight: bold;
@@ -176,6 +202,7 @@ main {
             background: #2b4138;
             color: white;
             padding: 8px;
+
             @media screen and (max-width: 766px) {
                 font-size: 1.85rem;
                 font-weight: bold;
@@ -184,9 +211,11 @@ main {
                 padding: 8px;
             }
         }
+
         .smalls {
             font-size: 2.3rem;
             letter-spacing: 8px;
+
             @media screen and (max-width: 766px) {
                 font-size: 1.3rem;
                 letter-spacing: 8px;
@@ -203,16 +232,20 @@ main {
     height: 120vh;
     padding: 32px 0;
     font-family: 'Poppins';
+
     p {
         color: #222;
+
         @media screen and (max-width: 766px) {
             font-size: .85rem;
             color: white;
         }
     }
+
     @media screen and (max-width:766px) {
         height: 100vh;
     }
+
     // color: white;
     .gradient {
         //background: linear-gradient(to bottom, #cfcfcf, rgba(252, 252, 252, .2), rgb(207 207 207 / 60%));
@@ -224,14 +257,17 @@ main {
         bottom: 0;
         z-index: 2;
     }
+
     .totop {
         position: absolute;
         top: 16px;
+
         @media screen and (max-width:766px) {
             bottom: 0;
             top: initial;
         }
     }
+
     .imagez {
         position: absolute;
         left: 0;
@@ -241,15 +277,18 @@ main {
         bottom: 0;
         width: 100%;
         height: 100%;
+
         @media screen and (max-width: 766px) {
             // position: absolute;
         }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
+
     // @media screen and (max-width:766px) {
     //     width: 50%;
     //     position: absolute;
@@ -260,6 +299,7 @@ main {
 
 .draw {
     min-height: 300vh;
+
     // display: none;
     .images {
         position: fixed;
@@ -270,6 +310,7 @@ main {
         top: 0;
         width: 100%;
         height: 100%;
+
         img {
             width: 100%;
             height: 100%;
@@ -285,24 +326,31 @@ main {
     // background: #50615a;
     background: #2b4138;
     width: 100%;
+
     @keyframes gerak {
+
         0%,
         100% {
             left: 24px;
         }
+
         50% {
             left: 72px;
         }
     }
+
     @keyframes gerak2 {
+
         0%,
         100% {
             left: 20vw;
         }
+
         50% {
             left: 23vw;
         }
     }
+
     .awan {
         position: absolute;
         left: 24px;
@@ -312,15 +360,18 @@ main {
         filter: grayscale(1);
         opacity: .15;
         animation: gerak 8s linear infinite;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
+
         @media screen and (max-width:766px) {
             display: none;
         }
     }
+
     .awan2 {
         position: absolute;
         left: 20vw;
@@ -331,54 +382,66 @@ main {
         filter: grayscale(1);
         opacity: .15;
         animation: gerak2 5s linear infinite;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
+
         @media screen and (max-width:766px) {
             display: none;
         }
     }
+
     .helping {
         overflow-x: hidden;
     }
+
     @keyframes run {
         0% {
             transform: rotateY(180deg);
             left: -270px;
         }
+
         50% {
             transform: rotateY(180deg);
             left: 100%;
         }
+
         51% {
             transform: rotateY(0deg);
             left: calc(100% + 270px);
         }
+
         100% {
             transform: rotateY(0deg);
             left: -270px;
         }
     }
+
     @keyframes runs {
         0% {
             transform: rotateY(180deg);
             right: -270px;
         }
+
         50% {
             transform: rotateY(180deg);
             right: 100%;
         }
+
         51% {
             transform: rotateY(0deg);
             right: calc(100% + 270px);
         }
+
         100% {
             transform: rotateY(0deg);
             right: -270px;
         }
     }
+
     .mobil {
         position: absolute;
         bottom: 12px;
@@ -392,15 +455,18 @@ main {
         animation: linear infinite;
         animation-name: run;
         animation-duration: 20s;
+
         @media screen and (max-width: 766px) {
             // display: none;
         }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
+
     .mobil2 {
         position: absolute;
         bottom: 12px;
@@ -414,17 +480,20 @@ main {
         animation: linear infinite;
         animation-name: runs;
         animation-duration: 24s;
+
         @media screen and (max-width: 766px) {
             // display: none;
             bottom: 10px;
-            width: 90px;
+            // width: 90px;
         }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
+
     .mobil3 {
         position: absolute;
         bottom: 12px;
@@ -438,6 +507,7 @@ main {
         animation: linear infinite;
         animation-name: runs;
         animation-duration: 38s;
+
         // display: none;
         @media screen and (max-width: 766px) {
             // display: none;
@@ -445,12 +515,14 @@ main {
             bottom: 10px;
             width: 90px;
         }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
+
     .mobil4 {
         position: absolute;
         bottom: 12px;
@@ -464,6 +536,7 @@ main {
         animation: linear infinite;
         animation-name: runs;
         animation-duration: 15s;
+
         // display: none;
         @media screen and (max-width: 766px) {
             // display: none;
@@ -471,18 +544,21 @@ main {
             bottom: 10px;
             width: 45px;
         }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
+
     .tulisan {
         position: absolute;
         right: 0;
         top: 0;
         width: 35vw;
         padding: 16px;
+
         @media screen and (max-width: 766px) {
             left: 50%;
             top: 65%;
@@ -494,18 +570,22 @@ main {
             font-size: 18px;
             right: initial;
         }
+
         @media screen and (max-width:375px) {
             top: 60%;
         }
+
         h3 {
             font-family: 'Poppins' !important;
             color: white;
             font-size: 1.85rem;
+
             @media screen and (min-width: 1500px) {
                 font-size: 2.3rem;
             }
         }
     }
+
     &::before {
         position: absolute;
         content: '';
@@ -519,10 +599,12 @@ main {
         top: 0;
         left: 0;
         opacity: .3;
+
         @media screen and (max-width: 766px) {
             // background-image: none;
         }
     }
+
     .images {
         width: 50%;
         // border: 1px solid red;
@@ -533,14 +615,17 @@ main {
         top: 50%;
         z-index: 9;
         transform: translate(-50%, -50%);
+
         @media screen and (max-width: 766px) {
             width: 100%;
         }
+
         embed {
             width: 100%;
             height: 100%;
         }
     }
+
     embed {
         width: 100%;
         height: 100%;
@@ -552,6 +637,7 @@ main {
         bottom: 0;
         right: 0;
     }
+
     .informasi {
         position: absolute;
         top: 0;
@@ -564,6 +650,7 @@ main {
         font-size: 14px;
         animation: none;
     }
+
     .test-img {
         position: absolute;
         z-index: 3;
@@ -572,26 +659,32 @@ main {
         bottom: 0;
         right: 0;
         animation: opa 2s linear infinite;
+
         @keyframes opa {
+
             0%,
             50% {
                 opacity: 1;
             }
+
             100% {
                 opacity: .3;
             }
         }
+
         img {
             width: 100%;
             height: 100%;
             margin: 0;
             object-fit: contain;
+
             @media screen and (max-width: 766px) {
                 object-fit: cover;
                 height: 80%;
             }
         }
     }
+
     .pilih {
         position: absolute;
         top: 90px;
@@ -600,22 +693,27 @@ main {
         width: 38vw;
         padding: 8px;
         right: 0;
+
         @media screen and (max-width: 766px) {
             width: auto;
             padding: 8px;
             top: initial;
             bottom: 20px;
         }
+
         @media screen and (min-width:1500px) {
             top: 125px;
         }
+
         .buttonx {
             display: block;
             padding: 0;
             margin: 0 auto;
             text-align: center;
+
             li {
                 display: inline;
+
                 button {
                     margin-bottom: 4px;
                 }
@@ -626,6 +724,7 @@ main {
 
 .isdesktop {
     display: block !important;
+
     @media screen and (max-width: 766px) {
         display: none !important;
     }
@@ -633,6 +732,7 @@ main {
 
 .ismobile {
     display: none !important;
+
     @media screen and (max-width: 766px) {
         display: block !important;
     }
@@ -656,6 +756,7 @@ main {
     touch-action: manipulation;
     text-transform: uppercase;
     width: 138px !important;
+
     &:focus,
     &:hover {
         box-shadow: none !important;
@@ -663,6 +764,7 @@ main {
         border-color: #229b7b !important;
         color: #229b7b !important;
     }
+
     @media screen and (max-width:766px) {
         font-size: 9px !important;
         padding: 2px !important;
@@ -684,9 +786,11 @@ main {
     // width: 100%;
     width: 27vw;
     height: 100%;
+
     @media screen and (min-width: 1440px) {
         width: 30vw;
     }
+
     &::before {
         content: "";
         position: absolute;
@@ -697,9 +801,11 @@ main {
         background: linear-gradient(to top, #1e2d27, transparent);
         height: 100px;
     }
+
     @media screen and (max-width:766px) {
         border: none;
     }
+
     &::before {
         @media screen and (max-width: 766px) {
             content: "";
@@ -712,6 +818,7 @@ main {
             background: linear-gradient(to bottom, transparent, #2b4138);
         }
     }
+
     &::after {
         @media screen and (max-width: 766px) {
             content: "";
@@ -723,10 +830,12 @@ main {
             background: linear-gradient(to top, transparent, #2b4138);
         }
     }
+
     @media screen and (max-width:766px) {
         width: 100%;
         height: 80%;
     }
+
     img {
         width: 100%;
         height: 100%;
@@ -760,6 +869,7 @@ main {
     z-index: 30;
     height: 100vh;
     background: rgba($color: #ff0000, $alpha: .3);
+
     li {
         margin-bottom: 16px;
     }
@@ -785,11 +895,13 @@ main {
     min-height: 100vh;
     position: relative;
     z-index: 14;
+
     .img-tech {
         position: relative;
         width: 100%;
         margin: 32px auto;
         height: 100%;
+
         &__img {
             position: absolute;
             left: 0;
@@ -799,12 +911,14 @@ main {
             width: 100%;
             height: auto;
             z-index: 7;
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
         }
+
         &__data {
             position: absolute;
             left: 0;
@@ -812,61 +926,76 @@ main {
             z-index: 8;
             width: 40%;
             height: auto;
+
             h4 {
                 color: white;
             }
         }
     }
+
     @keyframes gerakan {
+
         0%,
         100% {
             bottom: 0px;
         }
+
         50% {
             bottom: -16px;
         }
     }
+
     padding: 62px 0 32px;
+
     @media screen and (max-width: 766px) {
         padding: 32px 0;
     }
+
     h3 {
         color: #32debe;
         font-size: 2.5rem;
         font-family: 'Poppins';
     }
+
     p {
         color: #ececec;
         font-family: 'Poppins';
+
         @media screen and (max-width: 766px) {
             font-size: .85rem;
             color: #d4d4d4;
         }
     }
+
     .w-300 {
         width: fit-content !important;
         text-align: left;
         margin: 24px auto 0;
         display: block;
     }
+
     .tekx {
         display: inline-block;
         font-size: 16px !important;
+
         @media screen and (max-width: 766px) {
             padding: 4px 8px;
         }
     }
+
     .tops {
         width: 30px;
         height: 30px;
         transform: rotate(90deg);
         display: inline-block;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
+
     //iphone
     .wall {
         width: 60em;
@@ -878,11 +1007,13 @@ main {
         grid-template-columns: 0 4fr 1fr;
         margin: 0 auto 16px;
         overflow: hidden;
+
         @media screen and (max-width: 766px) {
             width: auto;
             height: 60vh;
         }
     }
+
     h2 {
         position: relative;
         width: 20em;
@@ -890,47 +1021,60 @@ main {
         color: white;
         z-index: 33;
         font-family: 'Poppins', sans-serif;
+
         @media screen and (max-width: 766px) {
             width: 65vw;
             font-size: 1.4rem;
         }
     }
+
     .back,
     .side {
         display: flex;
         align-items: center;
     }
+
     .back {
         background: linear-gradient(to right, #2b4138, #ddd);
         justify-content: flex-end;
         position: relative;
+
         @keyframes gerakan {
+
             0%,
             100% {
                 bottom: 0px;
             }
+
             50% {
                 bottom: -16px;
             }
         }
+
         @keyframes gerakan2 {
+
             0%,
             100% {
                 left: 35%;
             }
+
             50% {
                 left: 39%;
             }
         }
+
         @keyframes gerakan3 {
+
             0%,
             100% {
                 bottom: -16px;
             }
+
             50% {
                 bottom: -26px;
             }
         }
+
         .img {
             position: absolute;
             bottom: 0;
@@ -939,36 +1083,43 @@ main {
             height: auto;
             filter: saturate(0.5);
             animation: gerakan 2s linear infinite;
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
+
         .img2 {
             left: 35%;
             width: 20%;
             bottom: -24px;
             animation: gerakan2 2s linear infinite;
+
             @media screen and (max-width: 766px) {
                 width: 25%;
             }
         }
+
         .img3 {
             left: 60%;
             width: 15%;
             bottom: -16px;
             animation: gerakan3 2s linear infinite;
+
             @media screen and (max-width: 766px) {
                 width: 24%;
                 left: 65%;
             }
         }
     }
+
     .side {
         background: radial-gradient(at 0% 50%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0) 90%), linear-gradient(to right, #ddd, #ccc);
         perspective: 1000px;
     }
+
     ul {
         list-style-type: none;
         padding: 0;
@@ -976,15 +1127,18 @@ main {
         display: flex;
         flex-direction: column;
     }
+
     .back ul {
         width: 75%;
         align-items: flex-end;
     }
+
     .side ul {
         width: 100%;
         transform-origin: left;
         transform: rotateY(-75deg) scaleX(4);
     }
+
     ul li {
         height: 5em;
         background: var(--c);
@@ -992,11 +1146,13 @@ main {
         transform-origin: right;
         transform: scaleX(0);
     }
+
     @keyframes show {
         to {
             transform: scaleX(1);
         }
     }
+
     ul li.xs-max {
         --c: #3fbaa3;
         --high-price: 1449;
@@ -1004,6 +1160,7 @@ main {
         --c2: #229b7b;
         z-index: 5;
     }
+
     ul li.xs {
         --c: #3fbaa3;
         --high-price: 1349;
@@ -1011,6 +1168,7 @@ main {
         --c2: #229b7b;
         z-index: 4;
     }
+
     ul li.xr {
         --c: #3fbaa3;
         --high-price: 899;
@@ -1018,6 +1176,7 @@ main {
         --c2: #229b7b;
         z-index: 3;
     }
+
     ul li.x {
         --c: #3fbaa3;
         --high-price: 1149;
@@ -1025,6 +1184,7 @@ main {
         --c2: #229b7b;
         z-index: 2;
     }
+
     .back ul li {
         width: calc(var(--high-price) / var(--max-price) * 100%);
         --percent: calc(var(--low-price) / var(--high-price) * 100%);
@@ -1033,6 +1193,7 @@ main {
         filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.3));
         animation-delay: 1s;
     }
+
     .back ul li::before {
         content: '';
         position: absolute;
@@ -1043,6 +1204,7 @@ main {
         border-top: 2.5em solid transparent;
         border-bottom: 2.5em solid transparent;
     }
+
     .back ul li span {
         position: absolute;
         width: 95%;
@@ -1051,10 +1213,12 @@ main {
         line-height: 4em;
         color: white;
         font-family: 'Poppins';
+
         @media screen and (max-width: 766px) {
             font-size: .95em;
         }
     }
+
     .back ul li div {
         padding: 0;
         position: absolute;
@@ -1064,16 +1228,19 @@ main {
         color: white;
         font-size: .8rem;
         font-family: 'Poppins';
+
         @media screen and (max-width: 766px) {
             font-size: .65rem;
         }
     }
+
     .side ul li {
         padding-right: 30%;
         text-align: right;
         color: white;
         font-family: 'Poppins';
         line-height: 5em;
+
         @media screen and (max-width: 766px) {
             line-height: 1.2em;
             padding-top: 10px;
@@ -1089,6 +1256,7 @@ main {
     overflow: hidden;
     z-index: 15;
     height: 80vh;
+
     .wraping {
         position: absolute;
         /* top: 50%; */
@@ -1101,6 +1269,7 @@ main {
         text-align: center;
         display: block;
         width: 100%;
+
         @media screen and (max-width: 766px) {
             overflow: initial;
             position: absolute;
@@ -1110,6 +1279,7 @@ main {
             top: 50%;
             transform: translate(-50%, -50%);
         }
+
         .hijau {
             background: #229b7b;
             padding: 8px;
@@ -1122,6 +1292,7 @@ main {
             display: inline-block;
             width: 180px;
             position: relative;
+
             &::before {
                 content: "";
                 position: absolute;
@@ -1131,14 +1302,17 @@ main {
                 background: silver;
                 z-index: -1;
             }
+
             @media screen and (max-width: 766px) {
                 width: 180px;
             }
+
             .small {
                 border-bottom: 1px solid white;
                 padding-bottom: 3px;
                 font-family: 'Poppins';
             }
+
             .nama {
                 font-weight: bold;
                 font-family: 'Poppins';
@@ -1146,6 +1320,7 @@ main {
             }
         }
     }
+
     &::before {
         position: absolute;
         content: "";
@@ -1158,15 +1333,18 @@ main {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
+
         @media screen and (max-width: 766px) {
             background-position: top;
         }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
+
     &::after {
         @media screen and (max-width: 766px) {
             content: "";
@@ -1187,18 +1365,24 @@ main {
     padding: 32px;
     position: relative;
     z-index: 18;
+
     h3 {
         color: #32debe;
         font-size: 2.5rem;
         font-family: 'Poppins';
+
         @media screen and (max-width:766px) {
             font-size: 2rem;
         }
     }
-    p {
+
+    p,
+    li {
         color: white;
+
         @media screen and (max-width:766px) {
             font-size: .85rem;
         }
     }
+
 }
