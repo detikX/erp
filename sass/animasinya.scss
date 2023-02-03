@@ -1231,6 +1231,9 @@ main {
                 width: 45%;
             }
         }
+        embed {
+            height: 90px;
+        }
     }
     .imagec {
         display: block;
@@ -1258,6 +1261,29 @@ main {
         @media screen and (max-width: 766px) {
             width: 100%;
             font-size: .85rem;
+        }
+    }
+}
+
+.tarif {
+    background: #2b4138;
+    padding: 32px 0;
+    position: relative;
+    z-index: 19;
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #fff;
+        @media screen and (max-width: 766px) {
+            font-size: 1.8rem;
+        }
+    }
+    .hargax {
+        font-size: 5rem;
+        color: white;
+        background: #32debe;
+        @media screen and (max-width: 766px) {
+            font-size: 2.5rem;
         }
     }
 }
