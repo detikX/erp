@@ -223,6 +223,9 @@ main {
         top: 0;
         bottom: 0;
         z-index: 2;
+        @media screen and (max-width: 766px) {
+            background: linear-gradient(to bottom, #cfcfcf, rgba(252, 252, 252, .2), #2b4138 85%);
+        }
     }
     .totop {
         position: absolute;
