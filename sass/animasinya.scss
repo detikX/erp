@@ -1230,7 +1230,7 @@ main {
     }
     p,
     li {
-        color: white;
+        color: #d4d4d4;
         @media screen and (max-width: 766px) {
             font-size: .85rem;
         }
@@ -1278,6 +1278,7 @@ main {
         color: white;
         display: block;
         font-family: 'Poppins';
+        font-size: .8rem;
         text-align: center;
         // border: 1px solid;
         @media screen and (max-width: 766px) {
