@@ -18,9 +18,9 @@
         background: #2b4138;
     }
     &__bg {
-        position: fixed;
-        display: none;
-        bottom: 0px;
+        position: absolute;
+        // display: none;
+        top: 0px;
         left: 0;
         opacity: .6;
         right: 0;
@@ -37,6 +37,9 @@
             height: 100%;
             object-fit: contain;
         }
+    }
+    .gsap-anim {
+        
     }
     .imagex {
         margin-bottom: 16px;
