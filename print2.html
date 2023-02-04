@@ -20,12 +20,13 @@
   text-align: center;
   border-collapse: collapse;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 td {
     border: 1px solid;
     text-align: left;
+    font-size: 12px;
 }
 
 .bold~tr td {
@@ -45,6 +46,7 @@ td {
 }
 .judul {
     /* width: 50%; */
+    margin-bottom: 16px;
 }
 .judul td {
     width: 70%;
@@ -80,10 +82,14 @@ td {
   font-weight: bold;
   width: 300px;
 }
+thead td {
+  background: #ccc;
+  font-weight: bold;
+}
 </style>
 <body>
     <div style="text-align:center">
-        <h1>Rencana Anggaran Biaya</h1>
+        <h1>Rencana Anggaran Biaya </h1>
     </div>
 
     <table class="judul">
@@ -108,7 +114,9 @@ td {
             <td class="no">Gedung dan Instalasi</td>
         </tr>
     </table>
+
     <table>
+      <thead>
         <tr>
           <td>No</td>
           <td>Spesifikasi Teknis</td>
@@ -118,6 +126,8 @@ td {
           <td>Jumlah</td>
           <!-- <td>Rab</td> -->
         </tr>
+        
+      </thead>
         <tr>
           <td>1</td>
           <td>Pekerjaan Dinding</td>

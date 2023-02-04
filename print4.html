@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @page {
+        margin: 0;
+        size: letter; /*or width then height 150mm 50mm*/
+    }
+    body {
+        font-family: sans-serif;
+    }
+    table {
+        font-family: sans-serif;
+  /* border: solid 2px black; */
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 90%;
+}
+
+td {
+    border: 1px solid;
+    text-align: left;
+    font-size: 12px;
+}
+
+.bold~tr td {
+  border: solid 1px lightgray;
+}
+
+td {
+  padding: 0.5em;
+}
+
+[colspan="4"][rowspan="2"] {
+  height: 6em;
+}
+
+.no {
+    border-color: transparent;
+}
+.judul {
+    /* width: 50%; */
+    margin-bottom: 16px;
+}
+.judul td {
+    width: 70%;
+}
+.judul td:nth-child(2){
+    width: 1%;
+}
+.judul td:nth-child(1){
+    width: 20%;
+}
+
+.ttd {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ttd .nama,.ttd .jabatan {
+    float: right;
+    text-align: center;
+}
+.clear {
+    clear: both;
+}
+.c {
+    text-align: center;
+    border-color: transparent;
+}
+thead td {
+  background: #ccc;
+  font-weight: bold;
+}
+
+td.paraf {
+  border-color: transparent;
+}
+td.paraf img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+
+.ahs td:last-child {
+  text-align: right;
+}
+</style>
+<body>
+    <div style="text-align:center">
+        <h1>Analisa Harga Satuan</h1>
+    </div>
+
+    <!-- 1 kesatuan -->
+    <!-- judul -->
+    <table>
+      <tr>
+        <td class="no">
+          <h2><b>Pasang Meja Kerja</b></h2>
+
+        </td>
+      </tr>
+    </table>
+    <!-- end judul -->
+
+    <!-- data AHS -->
+    <table class="ahs">
+    <thead>
+      <tr>
+        <td>No</td>
+        <td>Uraian Pekerjaan</td>
+        <td>Jenis</td>
+        <td>Satuan</td>
+        <td>Koefisien</td>
+        <td>Harga Satuan</td>
+        <td>Jumlah</td>
+      </tr>
+
+    </thead>
+      <!-- jenis tenaga -->
+      <tr>
+        <td>1</td>
+        <td>Tukang Kayu</td>
+        <td>Tenaga</td>
+        <td>OH</td>
+        <td>0.3</td>
+        <td>Rp 100.000</td>
+        <td>Rp 20.000.000</td>
+        <!-- <td>Rp 85.000</td> -->
+      </tr>
+      
+      <tr>
+      <td>2</td>
+      <td>Pekerja</td>
+      <td>Tenaga</td>
+      <td>OH</td>
+      <td>0.3</td>
+      <td>Rp 100.000</td>
+      <td>Rp 20.000.000</td>
+        <!-- <td>Rp 85.000</td> -->
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Mandor</td>
+        <td>Tenaga</td>
+        <td>OH</td>
+        <td>0.3</td>
+        <td>Rp 100.000</td>
+        <td>Rp 20.000.000</td>
+        <!-- <td>Rp 85.000</td> -->
+      </tr>
+
+      <tr>
+      <td colspan="5"></td>
+      <td><b>Jumlah</b></td>
+      <td><b>Rp 60.000.000</b></td>
+      <!-- <td><b>Rp 170.000</b></td> -->
+      </tr>
+      
+      <!-- jenis bahan -->
+      <thead>
+        <tr>
+          <td>No</td>
+          <td>Uraian Pekerjaan</td>
+          <td>Jenis</td>
+          <td>Satuan</td>
+          <td>Koefisien</td>
+          <td>Harga Satuan</td>
+          <td>Jumlah</td>
+        </tr>
+  
+      </thead>
+        <tr>
+          <td>1</td>
+          <td>HPL</td>
+          <td>Bahan</td>
+          <td>lbr</td>
+          <td>0.3</td>
+          <td>Rp 100.000</td>
+          <td>Rp 20.000.000</td>
+          <!-- <td>Rp 85.000</td> -->
+        </tr>
+        
+        <tr>
+          <td>2</td>
+          <td>Multiplek</td>
+          <td>Bahan</td>
+          <td>lbr</td>
+          <td>0.3</td>
+          <td>Rp 100.000</td>
+          <td>Rp 20.000.000</td>
+            <!-- <td>Rp 85.000</td> -->
+          </tr>
+  
+          <tr>
+            <td>3</td>
+            <td>Lem Kayu</td>
+            <td>Bahan</td>
+            <td>OH</td>
+            <td>0.3</td>
+            <td>Rp 100.000</td>
+            <td>Rp 20.000.000</td>
+            <!-- <td>Rp 85.000</td> -->
+          </tr>
+          
+          
+        <tr>
+          <td colspan="5"></td>
+          <td><b>Jumlah</b></td>
+          <td><b>Rp 60.000.000</b></td>
+          <!-- <td><b>Rp 170.000</b></td> -->
+        </tr>   
+        
+        <!-- totalin semua -->
+        <tr>
+          <td colspan="5"></td>
+          <td><b>Jumlah Total</b></td>
+          <td><b>Rp 120.000.000</b></td>
+          <!-- <td><b>Rp 170.000</b></td> -->
+        </tr>   
+        <tr>
+          <td colspan="5"></td>
+          <td><b>Overhead dan Profit x15%</b></td>
+          <td><b>Rp 18.000.000</b></td>
+          <!-- <td><b>Rp 170.000</b></td> -->
+        </tr> 
+        <tr>
+          <td colspan="5"></td>
+          <td><b>Harga Satuan Pekerjaan</b></td>
+          <td><b>Rp 138.000.000</b></td>
+          <!-- <td><b>Rp 170.000</b></td> -->
+        </tr>   
+    </table>
+
+    <!-- end data AHS -->
+
+    <!-- paraf -->
+    <table>
+      <tr>
+        
+          <td class="paraf">
+            <img src="https://image.shutterstock.com/image-photo/image-260nw-2137097891.jpg" alt="">
+          </td>
+          <td class="paraf">
+            <img src="https://image.shutterstock.com/image-photo/image-260nw-2137097891.jpg" alt="">
+          </td>
+          <td class="c" colspan="6">
+              <div>Jakarta, 22 Mei 2023</div>
+              <div>Pejabat Pembuat Komitmen</div>
+              <div>Bidang Biro Gedung dan Instalasi</div>
+              <br><br><br><br><br><br>
+              <div class="tes">Ashari Ibnu Hadjar, S.T</div>
+          </td>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+      </tr>
+    </table>
+
+     
+
+
+</body>
+</html>
