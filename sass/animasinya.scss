@@ -1253,8 +1253,20 @@ main {
                 width: 45%;
             }
         }
+        @keyframes gerakb {
+            0%,
+            100% {
+                left: 0;
+            }
+            50% {
+                left: 8px;
+            }
+        }
         embed {
             height: 90px;
+            position: relative;
+            left: 0;
+            animation: gerakb 1s linear infinite;
         }
     }
     .imagec {
@@ -1309,4 +1321,8 @@ main {
             font-size: 2.5rem;
         }
     }
+}
+
+.onee {
+    font-size: 1.5rem !important;
 }

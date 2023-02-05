@@ -75,7 +75,10 @@
         font-family: 'Poppins';
     }
     p {
-        font-size: .8rem;
+        @media screen and (max-width:1440px) {
+            font-size: .8rem;
+            
+        }
         font-family: 'Poppins';
         // line-height: 1.75rem;
         color: #d4d4d4;
@@ -143,12 +146,27 @@
             }
         }
     }
+    @keyframes warna {
+        0%,
+        100% {
+            background: #1a2d25;
+        }
+        50% {
+            background: #2b4138;
+        }
+    }
     .cardx__img-holder {
         // width: 35%;
         width: 50%;
         height: 75vh;
         position: relative;
         z-index: 18;
+        border: 2px solid white;
+        margin: 8px;
+        padding: 16px;
+        border-radius: 16px;
+        background: #1a2d25;
+        animation: warna 2s linear infinite;
         &::before {
             content: "";
             position: absolute;
