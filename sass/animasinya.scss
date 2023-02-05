@@ -1267,6 +1267,9 @@ main {
             position: relative;
             left: 0;
             animation: gerakb 1s linear infinite;
+            @media screen and (max-width:766px) {
+                height: 60px;
+            }
         }
         .testss {
             animation: gerakb 1.5s linear infinite !important;
