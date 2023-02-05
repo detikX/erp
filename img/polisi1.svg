@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.75 198"><defs>
+<style>.cls-1,.cls-2,.cls-3{fill:none;stroke:#fff;stroke-width:2px;}.cls-1{stroke-miterlimit:10;}.cls-2,.cls-3{stroke-linejoin:round;}.cls-3{stroke-linecap:round;}
+
+ #jalan {
+            stroke-dasharray: 800;
+            stroke-dashoffset: 0;
+            -webkit-animation: dash 4s linear forwards;
+            -o-animation: dash 4s linear forwards;
+            -moz-animation: dash 4s linear forwards;
+            animation: dash 4s linear forwards;
+        }
+
+        @-webkit-keyframes dash {
+            from {
+                stroke-dashoffset: 800;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+</style></defs><title>Asset 4</title><g id="Layer_2" data-name="Layer 2"><g id="Stroke_icons" data-name="Stroke icons"><line class="cls-1" x1="203.13" y1="172.5" x2="80.63" y2="172.5"/><line class="cls-1" x1="166.38" y1="129.63" x2="148" y2="129.63"/><line class="cls-1" x1="25.5" y1="123.5" x2="7.13" y2="123.5"/><circle class="cls-1" cx="230.69" cy="172.5" r="24.5"/><circle class="cls-1" cx="56.13" cy="172.5" r="24.5"/><line class="cls-2" x1="135.75" y1="105.13" x2="135.75" y2="68.38"/><polyline class="cls-2" points="227.63 105.13 80.63 105.13 96.23 73.12"/><path id="jalan" class="cls-1" d="M31.62,172.5H25.5A24.5,24.5,0,0,1,1,148V135.75L7.12,123.5V111.25A12.25,12.25,0,0,1,19.38,99H31.62L59.84,74.31a73.53,73.53,0,0,1,48.4-18.19h32.35a73.55,73.55,0,0,1,45.92,16.11l41.11,32.89c54.28,9.91,55.13,24,55.13,24v31.14A12.24,12.24,0,0,1,270.5,172.5H252.12"/><line class="cls-2" x1="264.38" y1="135.75" x2="282.75" y2="135.75"/><line class="cls-3" x1="135.75" y1="7.13" x2="135.75" y2="1"/><line class="cls-3" x1="172.5" y1="31.63" x2="178.63" y2="31.63"/><path class="cls-2" d="M123.5,56.12V40.81a9.19,9.19,0,0,1,9.19-9.19h6.12A9.19,9.19,0,0,1,148,40.81V56.12"/><path class="cls-3" d="M161.76,11.74l4.33-4.33Z"/><line class="cls-3" x1="99" y1="31.63" x2="92.88" y2="31.63"/><path class="cls-3" d="M109.74,11.74l-4.33-4.33Z"/></g></g></svg>
