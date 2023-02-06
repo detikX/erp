@@ -1196,6 +1196,14 @@ main {
     }
 }
 
+small {
+    font-size: 70%;
+}
+
+.share_icon>a {
+    padding: 0 !important;
+}
+
 #nav.dark {
     background: rgba($color: #2b4138, $alpha: .8);
 }
@@ -1215,7 +1223,7 @@ main {
         margin: 8px auto;
         height: 420px;
         @media screen and (max-width: 766px) {
-            height: auto;
+            height: 230px;
         }
         iframe {
             width: 100%;
