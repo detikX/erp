@@ -1202,6 +1202,16 @@ main {
     padding: 32px 0;
     position: relative;
     z-index: 18;
+    .video {
+        width: 100%;
+        margin: 8px auto;
+        height: 420px;
+        iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     &__bg {
         position: absolute;
         bottom: 0px;
@@ -1211,7 +1221,7 @@ main {
         width: 100%;
         height: 100%;
         filter: grayscale(1);
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             opacity: .4;
         }
         .testi {
@@ -1271,7 +1281,7 @@ main {
             position: relative;
             left: 0;
             animation: gerakb 1s linear infinite;
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 height: 60px;
             }
         }
