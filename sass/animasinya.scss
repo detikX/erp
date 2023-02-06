@@ -1196,6 +1196,14 @@ main {
     }
 }
 
+#nav.dark {
+    background: rgba($color: #2b4138, $alpha: .8);
+}
+
+#nav.no_index {
+    z-index: 88;
+}
+
 //scroll trigger
 .kena {
     background: #2b4138;
