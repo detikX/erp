@@ -127,3 +127,23 @@ targetsBreak.forEach((target, index) => {
         .from(target, { opacity: opacityFirst, duration: 0.2 }, 0)
         .to(target, { opacity: opacitySecond, duration: 0.2 }, 0.8);
 });
+
+function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        alert('windows phone');
+    }
+
+    if (/android/i.test(userAgent)) {
+        alert('android');
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        alert('iphone');
+    }
+
+    return "unknown";
+}
