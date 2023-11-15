@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @page {
+        margin: 0;
+        size: letter; /*or width then height 150mm 50mm*/
+    }
+    body {
+        font-family: sans-serif;
+    }
+    table {
+        font-family: sans-serif;
+  /* border: solid 2px black; */
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 90%;
+}
+
+td {
+    border: 1px solid;
+    text-align: left;
+    font-size: 12px;
+}
+
+.bold~tr td {
+  border: solid 1px lightgray;
+}
+
+td {
+  padding: 0.5em;
+}
+
+[colspan="4"][rowspan="2"] {
+  height: 6em;
+}
+
+.no {
+    border-color: transparent;
+}
+.judul {
+    /* width: 50%; */
+    margin-bottom: 16px;
+}
+.judul td {
+    width: 70%;
+}
+.judul td:nth-child(2){
+    width: 1%;
+}
+.judul td:nth-child(1){
+    width: 20%;
+}
+
+.ttd {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ttd .nama,.ttd .jabatan {
+    float: right;
+    text-align: center;
+}
+.clear {
+    clear: both;
+}
+.c {
+    text-align: center;
+    border-color: transparent;
+}
+.nego {
+  border: 2px solid;
+  padding: 8px;
+  text-align: center;
+  float: right;
+  font-weight: bold;
+  width: 300px;
+}
+
+thead td {
+  background: #ccc;
+  font-weight: bold;
+}
+</style>
+<body>
+    <div style="text-align:center">
+        <h1>Lembar Sakti </h1>
+    </div>
+
+    <table class="judul">
+      <tr>
+        <td class="no">Nama Pekerjaan</td>
+        <td class="no">:</td>
+        <td class="no">Pekerjaan Atap</td>
+      </tr>
+      <tr>
+        <td class="no">Lokasi</td>
+        <td class="no">:</td>
+        <td class="no">Gedung Nusantara 1</td>
+      </tr>
+      <tr>
+        <td class="no">Tahun Anggaran</td>
+        <td class="no">:</td>
+        <td class="no">2023</td>
+      </tr>
+      <tr>
+        <td class="no">Bagian</td>
+        <td class="no">:</td>
+        <td class="no">Gedung dan Taman</td>
+    </tr>
+      <tr>
+          <td class="no">Sub Bagian</td>
+          <td class="no">:</td>
+          <td class="no">Gedung dan Instalasi</td>
+      </tr>
+  </table>
+    <table>
+      <thead>
+        <tr>
+          <td>No</td>
+          <td>Mata Anggaran</td>
+          <td>Uraian Pekerjaan</td>
+          <td>Kode Barang</td>
+          <td>Volume</td>
+          <td>Satuan</td>
+          <td>Harga Satuan</td>
+          <td>Jumlah</td>
+          <!-- <td>Rab</td> -->
+        </tr>
+
+      </thead>
+        <tr>
+          <td>1</td>
+          <td>WA.01010.121212</td>
+          <td>Pekerjaan Dinding</td>
+          <td>3030.2020.0303</td>
+          <td>2</td>
+          <td>m3</td>
+          <td>Rp 100.000</td>
+          <td>Rp 20.000.000</td>
+          <!-- <td>Rp 85.000</td> -->
+        </tr>
+        
+        <tr>
+          <td>2</td>
+          <td>WA.01010.121212</td>
+          <td>Pekerjaan Dinding</td>
+          <td>3030.2020.0303</td>
+          <td>2</td>
+          <td>m3</td>
+          <td>Rp 100.000</td>
+          <td>Rp 20.000.000</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>WA.01010.999999</td>
+          <td>Pekerjaan Dinding 2</td>
+          <td>3030.2020.0303</td>
+          <td>2</td>
+          <td>m3</td>
+          <td>Rp 100.000</td>
+          <td>Rp 20.000.000</td>
+        </tr>
+
+          
+          
+          
+        <tr>
+          <td colspan="6"></td>
+          <td><b>Jumlah</b></td>
+          <td><b>Rp 40.000.000</b></td>
+          <!-- <td><b>Rp 170.000</b></td> -->
+        </tr>
+
+          <tr>
+            <td colspan="6"></td>
+            <td><b>Grand Total</b></td>
+            <td><b>Rp 40.000.000</b></td>
+          </tr>
+       
+      
+      </table>
+      <br>
+
+  
+     
+
+
+</body>
+</html>

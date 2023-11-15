@@ -2,7 +2,7 @@
 @import 'peta';
 @import 'gsap';
 @import'init';
-// @import 'traffic';
+@import 'traffic';
 .firstletter {
     &::first-letter {
         float: left;
@@ -1157,9 +1157,10 @@ main {
                 font-family: 'Poppins';
             }
             .nama {
-                font-weight: bold;
-                font-family: 'Poppins';
+                font-family: "Poppins";
                 padding-top: 3px;
+                font-size: 14px;
+                color: white;
             }
         }
     }
@@ -1365,4 +1366,25 @@ small {
 
 .onee {
     font-size: 1.5rem !important;
+}
+
+.hiura {
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+    transform: translate(0, -50%);
+    @media screen and (max-width: 766px) {
+        position: absolute;
+        left: 4%;
+        font-size: 11px;
+        bottom: 1%;
+        transform: translate(0, 0%);
+        width: 100%;
+    
+    
+    }
+}
+
+#search {
+    z-index: 90 !important;
 }
